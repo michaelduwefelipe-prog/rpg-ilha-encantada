@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RPG — Progressão &amp; Níveis</title>
+    <link rel="stylesheet" href="assets/style.css">
+</head>
+<body>
+
+<aside class="sidebar">
+    <div class="sidebar-brand">Ilha Encantada</div>
+    <div class="sidebar-title">Progressão</div>
+
+    <ul class="site-nav">
+        <li><a href="index.html">🏠 Início</a></li>
+        <li><a href="ficha.html">📜 Ficha de Personagem</a></li>
+        <li><a href="racas.html">🐾 Raças</a></li>
+        <li><a href="classes.html">🛠️ Classes (Trabalhos)</a></li>
+        <li><a href="regras.html">⚔️ Regras & Combate</a></li>
+        <li><a href="itens.html">🗡️ Itens & Preços</a></li>
+        <li><a href="progressao.html" class="ativo">✦ Progressão & Níveis</a></li>
+        <li><a href="criar-acao.html">✨ Criar Ação</a></li>
+    </ul>
+    <hr class="sidebar-divisor">
+
+    <ul class="lista-atalhos">
+        <li><a href="#inicio" class="btn-atalho">📖 Capa</a></li>
+        <li><a href="#pontos" class="btn-atalho">Ganhando Pontos</a></li>
+        <li><a href="#niveis" class="btn-atalho">Níveis do Personagem</a></li>
+        <li><a href="#recuperacao" class="btn-atalho">Recuperação &amp; Morte</a></li>
+    </ul>
+
+    <div class="sidebar-footer">
+        <a href="#inicio" class="btn-atalho" style="background: var(--blood); color: white;">Subir ao Topo</a>
+    </div>
+</aside>
+
+<main class="main-content">
+    <div class="grimorio" id="inicio">
+
+        <header class="capa">
+            <h1>Progressão &amp; Níveis</h1>
+            <p class="subtitulo-capa">Como Seu Personagem Evolui</p>
+        </header>
+
+        <!-- ===================== PONTOS ===================== -->
+        <section id="pontos">
+            <h2 class="raca-nome" style="font-size:1.7rem;">Progressão de Personagem</h2>
+            <span class="raca-tags">Como Ganhar Pontos</span>
+
+            <div class="callout">
+                Cada jogador sobe um Nível por dia passado, além de ganhar Pontos fazendo certas coisas. Para subir um Nível, são necessários sempre <strong>5 Pontos</strong>.
+            </div>
+
+            <div class="stats-grid">
+                <div class="stat-card"><span class="stat-val">+1</span><span class="stat-label">Cada Inimigo Nocauteado</span></div>
+                <div class="stat-card"><span class="stat-val">+1</span><span class="stat-label">HP Completo ao Fim do Dia</span></div>
+                <div class="stat-card"><span class="stat-val">+1</span><span class="stat-label">Destaque em Trabalho</span></div>
+            </div>
+        </section>
+
+        <hr class="separator">
+
+        <!-- ===================== NÍVEIS ===================== -->
+        <section id="niveis">
+            <h2 class="raca-nome" style="font-size:1.7rem;">Níveis do Personagem</h2>
+            <span class="raca-tags">Ganhos Gerais por Nível</span>
+
+            <table class="level-table">
+                <thead><tr><th>Nível</th><th>HP</th><th>Energia</th><th>Pontos Escolhíveis</th></tr></thead>
+                <tbody>
+                    <tr><td class="level-num">Lvl 1</td><td>+2 HP</td><td>+1 Energia</td><td>+1 Escolhível</td></tr>
+                    <tr><td class="level-num">Lvl 2</td><td>+2 HP</td><td>+2 Energia</td><td>+1 Escolhível</td></tr>
+                    <tr><td class="level-num">Lvl 3</td><td>+2 HP</td><td>+2 Energia</td><td>+2 Escolhível</td></tr>
+                    <tr><td class="level-num">Lvl 4</td><td>+2 HP</td><td>+2 Energia</td><td>+2 Escolhível</td></tr>
+                    <tr><td class="level-num">Lvl 5+</td><td>+4 HP</td><td>+2 Energia</td><td>+2 Escolhível</td></tr>
+                </tbody>
+            </table>
+
+            <div class="callout">
+                "Pontos Escolhíveis" podem ser distribuídos livremente entre os atributos (Percepção, Reflexo, Destreza, Força, Carisma, Furtividade) ou usados para desbloquear as evoluções de raça descritas no <a href="racas.html">Grimório de Raças</a>.
+            </div>
+        </section>
+
+        <hr class="separator">
+
+        <!-- ===================== RECUPERAÇÃO E MORTE ===================== -->
+        <section id="recuperacao">
+            <h2 class="raca-nome" style="font-size:1.7rem;">Recuperação &amp; Morte</h2>
+            <span class="raca-tags">Regras Finais</span>
+
+            <div class="hab-item">
+                <strong>Recuperação:</strong>
+                <p>Dormir uma noite completa recupera todo o HP e toda a Energia.</p>
+            </div>
+
+            <div class="hab-item">
+                <strong>Morte:</strong>
+                <p>Se o HP chegar a 0, o personagem fica "Nocauteado". Ele só morre de fato se sofrer um ataque de um inimigo <strong>Bruto ou Devastador</strong> enquanto estiver caído.</p>
+            </div>
+
+            <div class="hab-item">
+                <strong>Vantagem de Classe (Mineiro):</strong>
+                <p>Se você é um Mineiro e está tentando derrubar uma parede, você rola o dado duas vezes e escolhe o maior valor (Vantagem de Ferramenta).</p>
+            </div>
+        </section>
+
+    </div>
+</main>
+
+<script src="assets/script.js"></script>
+</body>
+</html>

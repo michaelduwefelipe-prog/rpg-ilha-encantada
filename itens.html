@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RPG — Itens &amp; Preços</title>
+    <link rel="stylesheet" href="assets/style.css">
+</head>
+<body>
+
+<aside class="sidebar">
+    <div class="sidebar-brand">Ilha Encantada</div>
+    <div class="sidebar-title">Itens</div>
+
+    <ul class="site-nav">
+        <li><a href="index.html">🏠 Início</a></li>
+        <li><a href="ficha.html">📜 Ficha de Personagem</a></li>
+        <li><a href="racas.html">🐾 Raças</a></li>
+        <li><a href="classes.html">🛠️ Classes (Trabalhos)</a></li>
+        <li><a href="regras.html">⚔️ Regras &amp; Combate</a></li>
+        <li><a href="itens.html" class="ativo">🗡️ Itens &amp; Preços</a></li>
+        <li><a href="progressao.html">✦ Progressão &amp; Níveis</a></li>
+        <li><a href="criar-acao.html">✨ Criar Ação</a></li>
+    </ul>
+    <hr class="sidebar-divisor">
+
+    <ul class="lista-atalhos">
+        <li><a href="#inicio" class="btn-atalho">📖 Capa</a></li>
+        <li><a href="#todos-itens" class="btn-atalho">🗡️ Todos os Itens</a></li>
+        <li><a href="#trabalho" class="btn-atalho">Itens de Trabalho</a></li>
+        <li><a href="#precos" class="btn-atalho">Tabela de Preços</a></li>
+    </ul>
+
+    <div class="sidebar-footer">
+        <a href="#inicio" class="btn-atalho" style="background: var(--blood); color: white;">Subir ao Topo</a>
+    </div>
+</aside>
+
+<main class="main-content">
+    <div class="grimorio" id="inicio">
+
+        <header class="capa">
+            <h1>Itens &amp; Armas</h1>
+            <p class="subtitulo-capa">Do Comum ao Mítico</p>
+        </header>
+
+        <div class="callout">
+            <strong>Armas Leves</strong> usam Reflexo ou Destreza. <strong>Armas Pesadas</strong> usam Força. <strong>Ferramentas</strong> dão vantagem se usadas pela classe correspondente.
+        </div>
+
+        <!-- ===================== TODOS OS ITENS (busca + raridade) ===================== -->
+        <section id="todos-itens">
+            <div class="toolbar-busca">
+                <div class="busca-input-wrap">
+                    <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <circle cx="11" cy="11" r="7"></circle>
+                        <line x1="21" y1="21" x2="16.65" y2="16.65"></line>
+                    </svg>
+                    <input type="text" id="busca" class="busca-input" placeholder="Buscar item pelo nome...">
+                </div>
+                <div class="filtro-chips" id="filtros">
+                    <button class="chip ativo" data-raridade="todos">Todos</button>
+                    <button class="chip" data-raridade="Comum">Comum</button>
+                    <button class="chip" data-raridade="Incomum">Incomum</button>
+                    <button class="chip" data-raridade="Raro">Raro</button>
+                    <button class="chip" data-raridade="Épico">Épico</button>
+                    <button class="chip" data-raridade="Lendário">Lendário</button>
+                    <button class="chip" data-raridade="Mítica">Mítica</button>
+                </div>
+                <p class="contador-resultados" id="contador"></p>
+            </div>
+
+            <div id="resultado-itens"></div>
+            <p class="sem-resultados" id="sem-resultados">Nenhum item encontrado com esse nome.</p>
+        </section>
+
+        <hr class="separator">
+
+        <!-- ===================== ITENS DE TRABALHO ===================== -->
+        <section id="trabalho">
+            <h2 class="raca-nome" style="font-size:1.7rem;">Itens de Trabalho</h2>
+            <span class="raca-tags">Ferramentas das Classes</span>
+            <div id="lista-trabalho"></div>
+        </section>
+
+        <hr class="separator">
+
+        <!-- ===================== PREÇOS ===================== -->
+        <section id="precos">
+            <h2 class="raca-nome" style="font-size:1.7rem;">Tabela de Preços e Economia</h2>
+            <span class="raca-tags">10 Moedas de Prata = 1 Moeda de Ouro</span>
+
+            <table class="preco-table">
+                <thead>
+                    <tr><th>Categoria</th><th>Item Exemplo</th><th>Preço Sugerido</th><th>Efeito Mecânico</th></tr>
+                </thead>
+                <tbody>
+                    <tr><td>Alimentação</td><td>Pão Amanhecido</td><td>5 moedas de cobre</td><td>Tira a fome leve por 2 horas.</td></tr>
+                    <tr><td>Alimentação</td><td>Frango Frito</td><td>1 moeda de prata</td><td>Tira a fome por 6 horas e recupera 2 de Energia.</td></tr>
+                    <tr><td>Alimentação</td><td>Ensopado de Peixe</td><td>2 moedas de prata</td><td>Tira a fome por 8h (especialidade do Pescador).</td></tr>
+                    <tr><td>Alimentação</td><td>Maçã Vermelha</td><td>5 moedas de prata</td><td>Recupera toda a Energia, mas causa nocaute por 1 dia.</td></tr>
+                    <tr><td>Alimentação</td><td>Torta de Doces</td><td>3 moedas de prata</td><td>Recupera Saciamento de todo o grupo.</td></tr>
+                    <tr><td>Montaria</td><td>Vaca do Jack</td><td>15 moedas de prata</td><td>Única montaria disponível para compra inicial.</td></tr>
+                    <tr><td>Armas Comuns</td><td>Adaga ou Bastão</td><td>5 a 8 moedas de prata</td><td>Armas básicas para início de jogo.</td></tr>
+                    <tr><td>Armas Incomuns</td><td>Espada Curta / Cutelo</td><td>1 moeda de ouro (10 pratas)</td><td>Causa Sangramento Normal.</td></tr>
+                    <tr><td>Armas Raras</td><td>Lâmina de Prata</td><td>3 a 5 moedas de ouro</td><td>Dano dobrado contra lobos e monstros.</td></tr>
+                    <tr><td>Armas de Pólvora</td><td>Pistola / Bacamarte</td><td>10 a 15 moedas de ouro</td><td>Causa Sangramento Severo.</td></tr>
+                    <tr><td>Serviços</td><td>Informação (Humpty)</td><td>2 moedas de prata</td><td>Informações sobre a vila e o Lenhador.</td></tr>
+                    <tr><td>Serviços</td><td>Feno/Palha (Porcos)</td><td>5 moedas (recompensa)</td><td>Pagamento por coletar material para os porcos.</td></tr>
+                </tbody>
+            </table>
+        </section>
+
+    </div>
+</main>
+
+<script src="assets/script.js"></script>
+<script src="assets/itens-data.js"></script>
+</body>
+</html>

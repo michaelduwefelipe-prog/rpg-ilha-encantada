@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RPG — Ficha de Personagem</title>
+    <link rel="stylesheet" href="assets/style.css">
+</head>
+<body>
+
+<aside class="sidebar">
+    <div class="sidebar-brand">Ilha Encantada</div>
+    <div class="sidebar-title">Ficha</div>
+
+    <ul class="site-nav">
+        <li><a href="index.html">🏠 Início</a></li>
+        <li><a href="ficha.html" class="ativo">📜 Ficha de Personagem</a></li>
+        <li><a href="racas.html">🐾 Raças</a></li>
+        <li><a href="classes.html">🛠️ Classes (Trabalhos)</a></li>
+        <li><a href="regras.html">⚔️ Regras &amp; Combate</a></li>
+        <li><a href="itens.html">🗡️ Itens &amp; Preços</a></li>
+        <li><a href="progressao.html">✦ Progressão &amp; Níveis</a></li>
+        <li><a href="criar-acao.html">✨ Criar Ação</a></li>
+    </ul>
+    <hr class="sidebar-divisor">
+
+    <ul class="lista-atalhos">
+        <li><a href="#inicio" class="btn-atalho">📖 Identidade</a></li>
+        <li><a href="#vitais" class="btn-atalho">❤ Status Vitais</a></li>
+        <li><a href="#atributos" class="btn-atalho">🎯 Atributos</a></li>
+        <li><a href="#condicoes" class="btn-atalho">☠️ Condições</a></li>
+        <li><a href="#acoes" class="btn-atalho">⚔️ Ações</a></li>
+        <li><a href="#inventario" class="btn-atalho">🎒 Inventário</a></li>
+    </ul>
+
+    <div class="sidebar-footer">
+        <button class="btn-atalho" style="background: #388e3c; color: white; width: 100%; border: none;" onclick="salvarFicha()">💾 Salvar Ficha</button>
+        <button class="btn-atalho" style="background: #1976d2; color: white; width: 100%; border: none; margin-top: 6px;" onclick="document.getElementById('fileInput').click()">📁 Carregar Ficha</button>
+        <input type="file" id="fileInput" accept="application/json" style="display:none" onchange="carregarFicha(event)">
+    </div>
+</aside>
+
+<main class="main-content">
+    <div class="grimorio" id="inicio">
+
+        <header class="capa">
+            <h1>Ficha de Personagem</h1>
+            <p class="subtitulo-capa">Ilha Encantada</p>
+        </header>
+
+        <!-- ===================== AÇÕES RÁPIDAS ===================== -->
+        <div class="quick-actions-bar">
+            <button class="quick-btn dano" onclick="ajustarStat('hp', -1)">🩸 Levar Dano</button>
+            <button class="quick-btn cura" onclick="ajustarStat('hp', 1)">💚 Curar HP</button>
+            <button class="quick-btn energia" onclick="ajustarStat('eng', -1)">⚡ Gastar Energia</button>
+            <button class="quick-btn energia" onclick="ajustarStat('eng', 1)">⚡ Recuperar Energia</button>
+            <button class="quick-btn essencia" onclick="ajustarStat('ess', -1)">✦ Gastar Essência</button>
+            <button class="quick-btn essencia" onclick="ajustarStat('ess', 1)">✦ Recuperar Essência</button>
+            <button class="quick-btn fome" onclick="ajustarSaciamento()">🍴 Marcar Fome</button>
+        </div>
+
+        <!-- ===================== IDENTIDADE ===================== -->
+        <div class="ficha-grid-topo">
+            <div class="ficha-input-box"><span class="label">Nome</span><input type="text" class="save-data" id="nome" placeholder="Herói"></div>
+            <div class="ficha-input-box"><span class="label">Raça</span><input type="text" class="save-data" id="raca" placeholder="Humano"></div>
+            <div class="ficha-input-box"><span class="label">Trabalho</span><input type="text" class="save-data" id="classe" placeholder="Ferreiro"></div>
+            <div class="ficha-input-box"><span class="label">Nível</span><input type="number" class="save-data" id="lvl" value="1"></div>
+            <div class="ficha-input-box"><span class="label">Pontos (0/5)</span><input type="text" class="save-data" id="progresso" placeholder="0"></div>
+        </div>
+
+        <!-- ===================== STATUS VITAIS ===================== -->
+        <section id="vitais">
+            <h3 class="sub-titulo">❤ Status Vitais</h3>
+            <div class="stats-grid">
+                <div class="stat-item-editavel" style="border-left-color: var(--hp);">
+                    <span class="label" style="color:var(--hp); font-family:'Cinzel',serif; font-size:0.65rem; text-transform:uppercase;">❤ HP (Vida)</span>
+                    <input type="text" class="save-data" id="hp" placeholder="20/20">
+                </div>
+                <div class="stat-item-editavel" style="border-left-color: var(--energy);">
+                    <span class="label" style="color:var(--energy); font-family:'Cinzel',serif; font-size:0.65rem; text-transform:uppercase;">⚡ Energia</span>
+                    <input type="text" class="save-data" id="eng" placeholder="15/15">
+                </div>
+                <div class="stat-item-editavel" style="border-left-color: var(--essence);">
+                    <span class="label" style="color:var(--essence); font-family:'Cinzel',serif; font-size:0.65rem; text-transform:uppercase;">✦ Essência</span>
+                    <input type="text" class="save-data" id="ess" placeholder="10/10">
+                </div>
+                <div class="stat-item-editavel" style="border-left-color: var(--satiety);">
+                    <span class="label" style="color:var(--satiety); font-family:'Cinzel',serif; font-size:0.65rem; text-transform:uppercase;">🍴 Saciamento</span>
+                    <input type="text" class="save-data" id="fome" placeholder="Saciado">
+                </div>
+            </div>
+        </section>
+
+        <div class="ficha-columns">
+            <!-- ===================== COLUNA ESQUERDA ===================== -->
+            <div>
+                <section id="atributos">
+                    <h3 class="sub-titulo">🎯 Atributos Base</h3>
+                    <table class="attr-table-ficha">
+                        <tr><td><b>PER</b> Percepção</td><td><input type="number" class="attr-input-ficha save-data" id="v_obs" value="0" oninput="updateAllBonus()"> <span class="bonus-display-ficha" id="b_obs">+0</span></td></tr>
+                        <tr><td><b>REF</b> Reflexo</td><td><input type="number" class="attr-input-ficha save-data" id="v_ref" value="0" oninput="updateAllBonus()"> <span class="bonus-display-ficha" id="b_ref">+0</span></td></tr>
+                        <tr><td><b>DES</b> Destreza</td><td><input type="number" class="attr-input-ficha save-data" id="v_des" value="0" oninput="updateAllBonus()"> <span class="bonus-display-ficha" id="b_des">+0</span></td></tr>
+                        <tr><td><b>FOR</b> Força</td><td><input type="number" class="attr-input-ficha save-data" id="v_for" value="0" oninput="updateAllBonus()"> <span class="bonus-display-ficha" id="b_for">+0</span></td></tr>
+                        <tr><td><b>CAR</b> Carisma</td><td><input type="number" class="attr-input-ficha save-data" id="v_car" value="0" oninput="updateAllBonus()"> <span class="bonus-display-ficha" id="b_car">+0</span></td></tr>
+                        <tr><td><b>FUR</b> Furtividade</td><td><input type="number" class="attr-input-ficha save-data" id="v_fur" value="0" oninput="updateAllBonus()"> <span class="bonus-display-ficha" id="b_fur">+0</span></td></tr>
+                    </table>
+                </section>
+
+                <section id="condicoes">
+                    <h3 class="sub-titulo">☠️ Condições</h3>
+                    <div style="display:flex; flex-direction:column; gap:8px;">
+                        <div class="condicao-box-ficha" style="border-left: 3px solid #fbc02d;">
+                            <span style="min-width: 110px; font-size:0.8rem; font-weight:bold;">HP Temporário:</span>
+                            <input type="text" class="save-data" id="hp_temp" value="0" style="font-weight: bold; border:1px solid var(--border); border-radius:3px; padding:4px; width:60px;">
+                        </div>
+                        <div class="condicao-box-ficha"><input type="checkbox" class="save-data-check" id="c_queima"> <span>🔥 Queimando</span> <input type="text" class="dot-input-ficha save-data" id="d_queima" value="0"></div>
+                        <div class="condicao-box-ficha"><input type="checkbox" class="save-data-check" id="c_veneno"> <span>🧪 Envenenado</span> <input type="text" class="dot-input-ficha save-data" id="d_veneno" value="0"></div>
+                        <div class="condicao-box-ficha"><input type="checkbox" class="save-data-check" id="c_sangue"> <span>🩸 Sangrando</span> <input type="text" class="dot-input-ficha save-data" id="d_sangue" value="0"></div>
+                        <div class="condicao-box-ficha"><input type="checkbox" class="save-data-check" id="c_atordo"> <span>😵 Atordoado</span></div>
+                    </div>
+                </section>
+            </div>
+
+            <!-- ===================== COLUNA DIREITA ===================== -->
+            <div>
+                <section id="acoes">
+                    <h3 class="sub-titulo">⚔️ Ações Manuais</h3>
+                    <div class="dynamic-header-ficha">
+                        <span>Ação</span><span>Dano</span><span>Tipo</span><span>Custo</span><span></span>
+                    </div>
+                    <div id="lista-ataques"></div>
+                    <button class="btn-grimorio secundario" style="margin-bottom: 22px;" onclick="addAtaque()">➕ Nova Ação Manual</button>
+
+                    <h3 class="sub-titulo">🎴 Ações Salvas (da tela Criar Ação)</h3>
+                    <div id="lista-acoes-custom"></div>
+                    <button class="btn-grimorio" onclick="abrirModalAcoes()">📥 Adicionar Ação Salva</button>
+
+                    <h3 class="sub-titulo">📖 Poderes &amp; Habilidades</h3>
+                    <textarea class="save-data" id="skills" placeholder="Habilidades da raça, passivas, etc." style="width:100%; min-height:90px; padding:10px; border:1px solid var(--border); border-radius:4px; font-family:'Lora',serif; background:#fffdf7;"></textarea>
+                </section>
+
+                <section id="inventario">
+                    <h3 class="sub-titulo">🎒 Inventário</h3>
+                    <div id="lista-itens"></div>
+                    <button class="btn-grimorio secundario" onclick="addItem()">➕ Novo Item</button>
+
+                    <div class="footer-stats-ficha">
+                        <div class="especial-box-ficha"><span class="label">Passos</span><input type="number" class="save-data" id="steps" value="3"></div>
+                        <div class="especial-box-ficha"><span class="label">Dano Extra</span><input type="text" class="save-data" id="dmg_extra" value="+0"></div>
+                        <div class="especial-box-ficha" style="border-color: var(--gold);"><span class="label">Moedas</span><input type="text" class="save-data" id="money" placeholder="Ouro / Prata"></div>
+                    </div>
+                </section>
+            </div>
+        </div>
+
+    </div>
+</main>
+
+<!-- ===================== MODAL: ESCOLHER AÇÃO SALVA ===================== -->
+<div class="modal-overlay" id="modal-acoes">
+    <div class="modal-box">
+        <button class="modal-fechar" onclick="fecharModalAcoes()">×</button>
+        <h3>🎴 Escolha uma Ação Salva</h3>
+        <div id="modal-lista-acoes" class="acoes-galeria"></div>
+        <p id="modal-vazio" style="display:none; text-align:center; color:#999; font-style:italic;">
+            Nenhuma ação salva ainda. Crie uma na tela <a href="criar-acao.html">Criar Ação</a>.
+        </p>
+    </div>
+</div>
+
+<script src="assets/script.js"></script>
+<script src="assets/acoes.js"></script>
+<script src="assets/ficha.js"></script>
+</body>
+</html>

@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RPG — Classes (Trabalhos)</title>
+    <link rel="stylesheet" href="assets/style.css">
+</head>
+<body>
+
+<aside class="sidebar">
+    <div class="sidebar-brand">Ilha Encantada</div>
+    <div class="sidebar-title">Classes</div>
+
+    <ul class="site-nav">
+        <li><a href="index.html">🏠 Início</a></li>
+        <li><a href="ficha.html">📜 Ficha de Personagem</a></li>
+        <li><a href="racas.html">🐾 Raças</a></li>
+        <li><a href="classes.html" class="ativo">🛠️ Classes (Trabalhos)</a></li>
+        <li><a href="regras.html">⚔️ Regras & Combate</a></li>
+        <li><a href="itens.html">🗡️ Itens & Preços</a></li>
+        <li><a href="progressao.html">✦ Progressão & Níveis</a></li>
+        <li><a href="criar-acao.html">✨ Criar Ação</a></li>
+    </ul>
+    <hr class="sidebar-divisor">
+
+    <ul class="lista-atalhos">
+        <li><a href="#inicio" class="btn-atalho">📖 Capa</a></li>
+        <li><a href="#ferreiro" class="btn-atalho">1. Ferreiro</a></li>
+        <li><a href="#pescador" class="btn-atalho">2. Pescador</a></li>
+        <li><a href="#medico" class="btn-atalho">3. Médico</a></li>
+        <li><a href="#lenhador" class="btn-atalho">4. Lenhador</a></li>
+        <li><a href="#cozinheiro" class="btn-atalho">5. Cozinheiro</a></li>
+        <li><a href="#alfaiate" class="btn-atalho">6. Alfaiate</a></li>
+        <li><a href="#mineiro" class="btn-atalho">7. Mineiro</a></li>
+        <li><a href="#menestrel" class="btn-atalho">8. Menestrel</a></li>
+        <li><a href="#fazendeiro" class="btn-atalho">9. Fazendeiro</a></li>
+        <li><a href="#mensageiro" class="btn-atalho">10. Mensageiro</a></li>
+        <li><a href="#alquimista" class="btn-atalho">11. Alquimista</a></li>
+    </ul>
+
+    <div class="sidebar-footer">
+        <a href="#inicio" class="btn-atalho" style="background: var(--blood); color: white;">Subir ao Topo</a>
+    </div>
+</aside>
+
+<main class="main-content">
+    <div class="grimorio" id="inicio">
+
+        <header class="capa">
+            <h1>Classes &amp; Trabalhos</h1>
+            <p class="subtitulo-capa">Os Ofícios da Vila Encantada</p>
+        </header>
+
+        <div class="callout">
+            Cada classe/trabalho tem um foco: caso o jogador utilize o atributo relacionado, ganha +2 nesse atributo (recomendado já somar esse +2 direto na ficha).
+        </div>
+
+        <div class="card-grid">
+
+            <div class="class-card" id="ferreiro">
+                <h3>1. Ferreiro <span style="font-size:1rem; color: var(--gold);">— O Tanque</span></h3>
+                <span class="class-foco">Foco: Força +2 · Energia +2</span>
+                <h5>Skill — Impacto da Bigorna</h5>
+                <p>Golpe pesado que ignora 2 de defesa do alvo. 1d10 + Força.</p>
+                <h5>Minigame — A Forja</h5>
+                <p>Dificuldade 15. Role 1d20 + Força; se passar, repara um item ou cria uma peça para vender. Um crítico (20) dá +1 de dano permanente ao item.</p>
+            </div>
+
+            <div class="class-card" id="pescador">
+                <h3>2. Pescador <span style="font-size:1rem; color: var(--gold);">— O Controle</span></h3>
+                <span class="class-foco">Foco: Reflexo +2 · Percepção +2</span>
+                <h5>Skill — Fisgada</h5>
+                <p>Lança o anzol; se acertar, puxa o inimigo 2 passos para perto. 1d6 + Reflexo.</p>
+                <h5>Minigame — Paciência no Rio</h5>
+                <p>Role 3 dados somados com Reflexo, cada um maior que o anterior; pode errar no máximo 1, senão repete o teste.</p>
+            </div>
+
+            <div class="class-card" id="medico">
+                <h3>3. Médico <span style="font-size:1rem; color: var(--gold);">— O Curandeiro</span></h3>
+                <span class="class-foco">Foco: Essência +2 · Carisma +2</span>
+                <h5>Skill — Primeiros Socorros</h5>
+                <p>Gasta 4 de Essência para curar 4d8 + Carisma de um aliado.</p>
+                <h5>Minigame — Cirurgia de Campo</h5>
+                <p>Teste de Destreza + Percepção. Se falhar (menor que 15), o paciente perde 1 HP; se acertar, remove ferimentos graves ou doenças que nenhum item cura.</p>
+            </div>
+
+            <div class="class-card" id="lenhador">
+                <h3>4. Lenhador <span style="font-size:1rem; color: var(--gold);">— O Destruidor</span></h3>
+                <span class="class-foco">Foco: Força +2 · Energia +2 (Vigor)</span>
+                <h5>Skill — Corte Transversal</h5>
+                <p>Atinge até 2 inimigos à frente. 1d12 + Força.</p>
+                <h5>Minigame — O Corte Preciso</h5>
+                <p>Role 4d20 + Força de cada vez para derrubar uma árvore. Some +10 nos 4 dados e derruba; passar de 15 em um dado obriga a rolar -1 dado; tirar 20 coleta na hora.</p>
+            </div>
+
+            <div class="class-card" id="cozinheiro">
+                <h3>5. Cozinheiro <span style="font-size:1rem; color: var(--gold);">— O Comideiro</span></h3>
+                <span class="class-foco">Foco: Energia +2 · Carisma +2 (Saciamento)</span>
+                <h5>Skill — Óleo Fervente</h5>
+                <p>Atira óleo quente. Causa 1d6 e reduz o Reflexo do alvo por 2 turnos.</p>
+                <h5>Minigame — Ritmo da Panela</h5>
+                <p>Recebe um pedido e rola 1d20 + Energia; o valor obtido define quão boa ficou a comida.</p>
+            </div>
+
+            <div class="class-card" id="alfaiate">
+                <h3>6. Alfaiate <span style="font-size:1rem; color: var(--gold);">— O Ágil</span></h3>
+                <span class="class-foco">Foco: Destreza +2 · Reflexo +2</span>
+                <h5>Skill — Ponto de Sutura</h5>
+                <p>Cria ou repara roupas para aliados: cria bolsas extras (+2 slots de inventário) ou reforça capas (+3 de Furtividade).</p>
+                <h5>Minigame — Costura Fina</h5>
+                <p>Role 1d20 + Reflexo para criar a roupa (dificuldade 10) ou consertar (dificuldade 15).</p>
+            </div>
+
+            <div class="class-card" id="mineiro">
+                <h3>7. Mineiro <span style="font-size:1rem; color: var(--gold);">— O Resistente</span></h3>
+                <span class="class-foco">Foco: Força +2 · Energia +2</span>
+                <h5>Skill — Desmoronamento</h5>
+                <p>Golpe no chão que faz pedras caírem (apenas em cavernas/tetos). 1d10 + Força.</p>
+                <h5>Minigame — Escavação</h5>
+                <p>Escolhe um ponto na parede e rola Percepção para minerar. Pode achar Ouro ou Pedras Preciosas para vender ao Gnomo.</p>
+                <p class="callout" style="margin-top:12px;">Vantagem de Classe: ao tentar derrubar uma parede, o Mineiro rola o dado duas vezes e escolhe o maior valor.</p>
+            </div>
+
+            <div class="class-card" id="menestrel">
+                <h3>8. Menestrel <span style="font-size:1rem; color: var(--gold);">— O Músico</span></h3>
+                <span class="class-foco">Foco: Carisma +2 · Essência +2</span>
+                <h5>Skill — Melodia Hipnótica</h5>
+                <p>Deixa todos animados: +5 em todos os atributos (aliados e inimigos).</p>
+                <h5>Minigame — Apresentação</h5>
+                <p>Rola Carisma; o valor total define quantas moedas de prata ganha da plateia.</p>
+            </div>
+
+            <div class="class-card" id="fazendeiro">
+                <h3>9. Fazendeiro <span style="font-size:1rem; color: var(--gold);">— O Domador</span></h3>
+                <span class="class-foco">Foco: Força +2 · Energia +2</span>
+                <h5>Skill — Encurralar o Gado</h5>
+                <p>Usa uma forquilha; se o inimigo tentar se aproximar, sofre um ataque livre.</p>
+                <h5>Minigame — Doma de Animais</h5>
+                <p>Teste de Carisma + Força. Se vencer o animal, ele pode virar uma montaria.</p>
+            </div>
+
+            <div class="class-card" id="mensageiro">
+                <h3>10. Mensageiro <span style="font-size:1rem; color: var(--gold);">— O Veloz</span></h3>
+                <span class="class-foco">Foco: Destreza +2 · Reflexo +2</span>
+                <h5>Skill — Entrega Expressa</h5>
+                <p>Ataca e se move no mesmo turno, sem gastar ação extra.</p>
+                <h5>Minigame — Corrida contra o Tempo</h5>
+                <p>Rola a quantidade de dados de 20 lados indicada; se tirar um "1" em algum, não consegue entregar a tempo.</p>
+            </div>
+
+            <div class="class-card" id="alquimista">
+                <h3>11. Alquimista <span style="font-size:1rem; color: var(--gold);">— O Misturador</span></h3>
+                <span class="class-foco">Foco: Essência +2 · Percepção +2</span>
+                <h5>Skill — Bomba de Fumaça</h5>
+                <p>Gasta 2 de Essência. Cria uma área onde ninguém pode ser alvo de ataques à distância por 1 turno.</p>
+                <h5>Minigame — Destilação</h5>
+                <p>Teste de Percepção. Sucesso cria poções de Energia ou Essência usando flores colhidas.</p>
+            </div>
+
+        </div>
+
+    </div>
+</main>
+
+<script src="assets/script.js"></script>
+</body>
+</html>

@@ -1,0 +1,1036 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RPG — Grimório de Raças</title>
+    <link rel="stylesheet" href="assets/style.css">
+</head>
+<body>
+
+<aside class="sidebar">
+    <div class="sidebar-brand">Ilha Encantada</div>
+    <div class="sidebar-title">Raças</div>
+
+    <ul class="site-nav">
+        <li><a href="index.html">🏠 Início</a></li>
+        <li><a href="ficha.html">📜 Ficha de Personagem</a></li>
+        <li><a href="racas.html" class="ativo">🐾 Raças</a></li>
+        <li><a href="classes.html">🛠️ Classes (Trabalhos)</a></li>
+        <li><a href="regras.html">⚔️ Regras & Combate</a></li>
+        <li><a href="itens.html">🗡️ Itens & Preços</a></li>
+        <li><a href="progressao.html">✦ Progressão & Níveis</a></li>
+        <li><a href="criar-acao.html">✨ Criar Ação</a></li>
+    </ul>
+    <hr class="sidebar-divisor">
+
+    <ul class="lista-atalhos">
+        <li><a href="#inicio" class="btn-atalho">📖 Capa</a></li>
+        <li><a href="#humano" class="btn-atalho">1. Humano (O Adaptável)</a></li>
+        <li><a href="#elfo" class="btn-atalho">2. Elfo (O Místico)</a></li>
+        <li><a href="#gnomo" class="btn-atalho">3. Gnomo (O Trapaceiro)</a></li>
+        <li><a href="#porco" class="btn-atalho">4. Porco (O Construtor)</a></li>
+        <li><a href="#cabrito" class="btn-atalho">5. Cabrito (O Ágil)</a></li>
+        <li><a href="#cordeiro" class="btn-atalho">6. Cordeiro (O Diplomata)</a></li>
+        <li><a href="#gato" class="btn-atalho">7. Gato (O Espadachim)</a></li>
+        <li><a href="#anao" class="btn-atalho">8. Anão (O Minerador)</a></li>
+        <li><a href="#macaco" class="btn-atalho">9. Macaco (O Acrobático)</a></li>
+        <li><a href="#ogro" class="btn-atalho">10. Ogro (O Feio)</a></li>
+        <li><a href="#planta" class="btn-atalho">11. Planta (O Atirador Botânico)</a></li>
+        <li><a href="#robo" class="btn-atalho">12. Robô (O Daora)</a></li>
+    </ul>
+
+    <div class="sidebar-footer">
+        <a href="#inicio" class="btn-atalho" style="background: var(--blood); color: white;">Subir ao Topo</a>
+    </div>
+</aside>
+
+<main class="main-content">
+    <div class="grimorio" id="inicio">
+
+        <header class="capa">
+            <h1>O Grimório de Raças</h1>
+            <p class="subtitulo-capa">Documentos Secretos da Ilha Encantada</p>
+        </header>
+
+        <div class="callout">
+            Ao criar o personagem é obrigatório escolher uma raça. Cada raça tem status e habilidades diferentes; caso a raça tenha mais de um item disponível, o jogador deve escolher apenas 1 deles.
+        </div>
+
+        <hr class="separator">
+
+        <!-- ===================== 1. HUMANO ===================== -->
+        <section id="humano">
+            <h2 class="raca-nome">1. Humano</h2>
+            <span class="raca-tags">O Adaptável</span>
+
+            <div class="stats-grid">
+                <div class="stat-card"><span class="stat-val">+5</span><span class="stat-label">HP</span></div>
+                <div class="stat-card"><span class="stat-val">+5</span><span class="stat-label">Energia</span></div>
+                <div class="stat-card"><span class="stat-val">+2</span><span class="stat-label">Essência</span></div>
+                <div class="stat-card"><span class="stat-val">+3</span><span class="stat-label">Percepção</span></div>
+                <div class="stat-card"><span class="stat-val">+3</span><span class="stat-label">Reflexo</span></div>
+                <div class="stat-card"><span class="stat-val">+3</span><span class="stat-label">Destreza</span></div>
+                <div class="stat-card"><span class="stat-val">+2</span><span class="stat-label">Força</span></div>
+                <div class="stat-card"><span class="stat-val">+2</span><span class="stat-label">Carisma</span></div>
+                <div class="stat-card"><span class="stat-val">+0</span><span class="stat-label">Furtividade</span></div>
+            </div>
+
+            <h3 class="sub-titulo">Sobre</h3>
+            <div class="hab-item">
+                <p>Diferente das criaturas que já nascem com dons mágicos, o Humano nasce com a necessidade de aprender. Eles são os únicos capazes de transformar qualquer objeto em ferramenta e qualquer caminho perdido em uma nova trilha. O humano se recusa a parar, adaptando-se a cada perigo com astúcia e uma vontade inabalável de deixar sua marca no mundo.</p>
+            </div>
+
+            <h3 class="sub-titulo">Aparência</h3>
+            <div class="hab-item">
+                <p>Dois braços e duas pernas, o que lhes garante um equilíbrio perfeito para percorrer trilhas longas. Suas mãos com dedos ágeis são sua maior vantagem biológica, permitindo que manipulem objetos com uma precisão que poucas raças conseguem imitar, sendo a base para a criação de suas famosas gambiarras.</p>
+            </div>
+
+            <h3 class="sub-titulo">Habilidades Iniciais</h3>
+            <div class="hab-item"><strong>O Odiador de Gigantes (Passiva):</strong> <p>Se o alvo for maior que o usuário, causa +1d4 de dano.</p></div>
+            <div class="hab-item"><strong>Sempre nas Trilhas (Passiva):</strong> <p>Se estiver com HP completo não se perde; em caso de perda de vida, faz um teste (1d20) e precisa tirar mais que 9 para relembrar o caminho.</p></div>
+            <div class="hab-item"><strong>Gambiarra:</strong> <p>Pode utilizar qualquer coisa para ataque (veja a lista de dano por objeto); caso o objeto não esteja na lista, o dano é definido pelo material.</p></div>
+
+            <h3 class="sub-titulo">Item</h3>
+            <div class="hab-item">
+                <strong>Bolsa de Provisões Mágica:</strong>
+                <p>Contém um pedaço de frango frito para cada integrante do grupo; a comida reaparece a cada 1 noite.</p>
+            </div>
+
+            <hr class="separator">
+
+            <h3 class="sub-titulo">⚔️ Progressão de Níveis</h3>
+            <table class="level-table">
+                <thead><tr><th>Nível</th><th>Bônus / Evolução</th></tr></thead>
+                <tbody>
+                    <tr><td class="level-num">Lvl 1</td><td>+1 Força | +1 Destreza</td></tr>
+                    <tr><td class="level-num">Lvl 2</td><td>Habilidade: <strong>Sempre nas Trilhas II</strong></td></tr>
+                    <tr><td class="level-num">Lvl 3</td><td>+2 Energia | +2 Reflexo</td></tr>
+                    <tr><td class="level-num">Lvl 4</td><td>Habilidade: <strong>Sempre nas Trilhas III</strong></td></tr>
+                    <tr><td class="level-num">Lvl 5</td><td>Habilidade: <strong>Gambiarra II</strong></td></tr>
+                    <tr><td class="level-num">Lvl 6</td><td>+2 Força | +2 Destreza</td></tr>
+                    <tr><td class="level-num">Lvl 7</td><td>Habilidade: <strong>Odiador de Gigantes II</strong></td></tr>
+                    <tr><td class="level-num">Lvl 8</td><td>Habilidade: <strong>Sempre nas Trilhas IV</strong></td></tr>
+                    <tr><td class="level-num">Lvl 9</td><td>Item: <strong>Bolsa de Provisões Extra Mágica</strong></td></tr>
+                    <tr><td class="level-num">Lvl 10</td><td>Habilidade: <strong>Sexto Sentido (Ativa)</strong></td></tr>
+                    <tr><td class="level-num">Lvl 11</td><td>Habilidade: <strong>Gambiarra III</strong></td></tr>
+                    <tr><td class="level-num">Lvl 12</td><td>+2 Força | +2 Destreza</td></tr>
+                    <tr><td class="level-num">Lvl 13</td><td>Habilidade: <strong>Lenda das Trilhas</strong></td></tr>
+                    <tr><td class="level-num">Lvl 14</td><td>+5 Reflexo | +5 Destreza</td></tr>
+                    <tr><td class="level-num">Lvl 15</td><td>Habilidade: <strong>Mestre da Gambiarra</strong></td></tr>
+                </tbody>
+            </table>
+
+            <h3 class="sub-titulo">Informações de Habilidades</h3>
+            <div class="hab-item1"><strong>Sempre nas Trilhas II:</strong> <p>Caso o personagem esteja em um local que já esteve antes, tem vantagem de conhecimento: +1 Destreza e +1 Percepção.</p></div>
+            <div class="hab-item2"><strong>Sempre nas Trilhas III:</strong> <p>Em local já conhecido, o bônus aumenta para +2 Destreza e +3 Percepção.</p></div>
+            <div class="hab-item3"><strong>Sempre nas Trilhas IV:</strong> <p>O personagem não precisa mais de HP completo para relembrar o caminho.</p></div>
+            <div class="hab-item4"><strong>Lenda das Trilhas:</strong> <p>O personagem sempre relembra o caminho e nunca se perde; em campo já conhecido, ganha +3 Destreza e +5 Percepção.</p></div>
+            <div class="hab-item5"><strong>Odiador de Gigantes II:</strong> <p>Se o alvo for maior que o usuário, causa +1d6 de dano.</p></div>
+            <div class="hab-item6"><strong>Gambiarra II:</strong> <p>Itens já utilizados antes causam +1 de dano.</p></div>
+            <div class="hab-item7"><strong>Gambiarra III:</strong> <p>Itens já utilizados antes causam +2 de dano.</p></div>
+            <div class="hab-item8"><strong>Mestre da Gambiarra:</strong> <p>Usando lógica, o jogador consegue criar outros itens a partir do que encontrar no cenário; esses itens ganham +4 de dano.</p></div>
+            <div class="hab-item9"><strong>Bolsa de Provisões Extra Mágica:</strong> <p>A Bolsa de Provisões evolui e agora dá 2 Frangos Fritos por integrante da equipe.</p></div>
+            <div class="hab-item10"><strong>Sexto Sentido (Ativa):</strong> <p>Ao ser ativada, concede +10 Reflexo e +10 Percepção até ser atacado.</p></div>
+        </section>
+
+        <hr class="separator">
+
+        <!-- ===================== 2. ELFO ===================== -->
+        <section id="elfo">
+            <h2 class="raca-nome">2. Elfo</h2>
+            <span class="raca-tags">O Místico</span>
+
+            <div class="stats-grid">
+                <div class="stat-card"><span class="stat-val">+0</span><span class="stat-label">HP</span></div>
+                <div class="stat-card"><span class="stat-val">+2</span><span class="stat-label">Energia</span></div>
+                <div class="stat-card"><span class="stat-val">+8</span><span class="stat-label">Essência</span></div>
+                <div class="stat-card"><span class="stat-val">+5</span><span class="stat-label">Percepção</span></div>
+                <div class="stat-card"><span class="stat-val">+4</span><span class="stat-label">Reflexo</span></div>
+                <div class="stat-card"><span class="stat-val">+4</span><span class="stat-label">Destreza</span></div>
+                <div class="stat-card"><span class="stat-val">+0</span><span class="stat-label">Força</span></div>
+                <div class="stat-card"><span class="stat-val">+2</span><span class="stat-label">Carisma</span></div>
+                <div class="stat-card"><span class="stat-val">+0</span><span class="stat-label">Furtividade</span></div>
+            </div>
+
+            <h3 class="sub-titulo">Sobre</h3>
+            <div class="hab-item">
+                <p>Diferente das criaturas que precisam lutar para entender o mundo, o Elfo nasce como uma extensão sutil dele. Eles não transformam a natureza com força bruta, mas sussurram para que ela os sirva. O elfo se recusa a ser notado, adaptando-se a cada perigo tornando-se invisível ou mesclando-se ao ambiente com astúcia feérica.</p>
+            </div>
+
+            <h3 class="sub-titulo">Aparência</h3>
+            <div class="hab-item">
+                <p>Parecido com Humanos, mas com uma estrutura de leveza sobrenatural. Possuem equilíbrio perfeito para caminhar sobre a neve sem deixar pegadas ou mover-se entre folhas secas sem produzir som. Realizam ofícios minuciosos com uma precisão que nenhuma raça "pesada" consegue imitar.</p>
+            </div>
+
+            <h3 class="sub-titulo">Habilidades Iniciais</h3>
+            <div class="hab-item"><strong>Espinhos Adormecidos (Ativa):</strong> <p>Gasta 4 de Essência. Cria espinhos que, se acertarem o alvo, o prendem por 1 turno.</p></div>
+            <div class="hab-item"><strong>Pirlimpimpim (Ativa):</strong> <p>Gasta 5 de Essência. Dá a um aliado a capacidade de flutuar/voar por 2 turnos.</p></div>
+
+            <h3 class="sub-titulo">Item</h3>
+            <div class="hab-item">
+                <strong>Frasco de Orvalho da Manhã:</strong>
+                <p>Um frasco de cristal que recupera instantaneamente 10 pontos de Essência. Recarrega sozinho quando o Elfo dorme.</p>
+            </div>
+
+            <hr class="separator">
+
+            <h3 class="sub-titulo">⚔️ Progressão de Níveis</h3>
+            <table class="level-table">
+                <thead><tr><th>Nível</th><th>Bônus / Evolução</th></tr></thead>
+                <tbody>
+                    <tr><td class="level-num">Lvl 1</td><td>+2 Essência | +1 Percepção</td></tr>
+                    <tr><td class="level-num">Lvl 2</td><td>Habilidade: <strong>Tropeço Surpresa (Ativa)</strong></td></tr>
+                    <tr><td class="level-num">Lvl 3</td><td>+2 Destreza | +1 Reflexo</td></tr>
+                    <tr><td class="level-num">Lvl 4</td><td>Habilidade: <strong>Camuflagem Feérica (Ativa)</strong></td></tr>
+                    <tr><td class="level-num">Lvl 5</td><td>+3 Essência | +2 Percepção</td></tr>
+                    <tr><td class="level-num">Lvl 6</td><td>Habilidade: <strong>Flecha de Seiva (Ativa)</strong></td></tr>
+                    <tr><td class="level-num">Lvl 7</td><td>+2 Reflexo | +2 Destreza</td></tr>
+                    <tr><td class="level-num">Lvl 8</td><td>Habilidade: <strong>Essência Purificada (Ativa)</strong></td></tr>
+                    <tr><td class="level-num">Lvl 9</td><td>+5 Essência | +2 HP</td></tr>
+                    <tr><td class="level-num">Lvl 10</td><td>Habilidade: <strong>Névoa de Orvalho</strong></td></tr>
+                    <tr><td class="level-num">Lvl 11</td><td>+4 Percepção | +2 Essência</td></tr>
+                    <tr><td class="level-num">Lvl 12</td><td>Habilidade: <strong>Sussurro da Floresta (Ativa)</strong></td></tr>
+                    <tr><td class="level-num">Lvl 13</td><td>+2 Destreza | +2 Reflexo</td></tr>
+                    <tr><td class="level-num">Lvl 14</td><td>Habilidade: <strong>Prisão de Âmbar (Ativa)</strong></td></tr>
+                    <tr><td class="level-num">Lvl 15</td><td>Habilidade: <strong>AVATAR DA NATUREZA!</strong></td></tr>
+                </tbody>
+            </table>
+
+            <h3 class="sub-titulo">Informações de Habilidades</h3>
+            <div class="hab-item1"><strong>Tropeço Surpresa (Ativa):</strong> <p>Gasta 2 de Essência. O Elfo faz um galho ou raiz surgir instantaneamente à frente do pé de um alvo. O inimigo cai e perde sua ação de ataque naquele turno.</p></div>
+            <div class="hab-item2"><strong>Camuflagem Feérica (Ativa):</strong> <p>Gasta 3 de Essência. O Elfo se mistura ao ambiente, ficando invisível por 2 turnos ou até realizar um ataque.</p></div>
+            <div class="hab-item3"><strong>Flecha de Seiva (Ativa):</strong> <p>Gasta 3 de Essência. Dispara um projétil de energia pegajosa. Dano 1d10 + Percepção e reduz o Reflexo do inimigo em -5 no próximo turno.</p></div>
+            <div class="hab-item4"><strong>Essência Purificada (Ativa):</strong> <p>O Elfo pode dar sua Essência para um aliado, ou canalizá-la em dano: 1d4 + essência gastada.</p></div>
+            <div class="hab-item5"><strong>Névoa de Orvalho:</strong> <p>Gasta 4 de Essência. O Elfo quebra o frasco no chão (que se regenera depois), criando uma névoa que cura todos os aliados em 1d8 durante 2 turnos.</p></div>
+            <div class="hab-item6"><strong>Sussurro da Floresta (Ativa):</strong> <p>Gasta 5 de Essência. O Elfo convoca o vento: todos os aliados ganham +5 de Reflexo e podem se mover o dobro da distância por 2 turnos.</p></div>
+            <div class="hab-item7"><strong>Prisão de Âmbar (Ativa):</strong> <p>Gasta 7 de Essência. Envolve um inimigo em resina mágica endurecida; ele fica paralisado por 2 turnos e não pode receber cura.</p></div>
+            <div class="hab-item8"><strong>AVATAR DA NATUREZA! (Ativa):</strong> <p>O Elfo se funde com a energia do local. Durante 3 turnos pode usar qualquer habilidade de Essência sem custo, todos os seus ataques causam Envenenamento e ele recupera 5 de HP por turno. Ao fim, entra em sono profundo por 2 turnos.</p></div>
+        </section>
+
+        <hr class="separator">
+
+        <!-- ===================== 3. GNOMO ===================== -->
+        <section id="gnomo">
+            <h2 class="raca-nome">3. Gnomo</h2>
+            <span class="raca-tags">O Trapaceiro</span>
+
+            <div class="stats-grid">
+                <div class="stat-card"><span class="stat-val">+2</span><span class="stat-label">HP</span></div>
+                <div class="stat-card"><span class="stat-val">+2</span><span class="stat-label">Energia</span></div>
+                <div class="stat-card"><span class="stat-val">+5</span><span class="stat-label">Essência</span></div>
+                <div class="stat-card"><span class="stat-val">+2</span><span class="stat-label">Percepção</span></div>
+                <div class="stat-card"><span class="stat-val">+2</span><span class="stat-label">Reflexo</span></div>
+                <div class="stat-card"><span class="stat-val">+2</span><span class="stat-label">Destreza</span></div>
+                <div class="stat-card"><span class="stat-val">+0</span><span class="stat-label">Força</span></div>
+                <div class="stat-card"><span class="stat-val">+5</span><span class="stat-label">Carisma</span></div>
+                <div class="stat-card"><span class="stat-val">+5</span><span class="stat-label">Furtividade</span></div>
+            </div>
+
+            <h3 class="sub-titulo">Sobre</h3>
+            <div class="hab-item">
+                <p>Os Gnomos da Vila Encantada são conhecidos como os seres mais astutos da ilha. Diferente dos Ogros ou Humanos que usam a força, o Gnomo sobrevive através da observação e da oportunidade. São mestres em encontrar atalhos, descobrir segredos e "reorganizar" a posse de itens sem que ninguém perceba. Vivem em casas camufladas entre as raízes das árvores mágicas e possuem uma rede de informações própria.</p>
+            </div>
+
+            <h3 class="sub-titulo">Aparência</h3>
+            <div class="hab-item">
+                <p>Pequenos, medindo entre 60cm a 90cm, os Gnomos costumam usar roupas de tons terrosos para se misturarem à floresta, mas nunca dispensam um acessório chamativo que "encontraram" por aí. Quase todos usam chapéus pontiagudos (que dizem ajudar a sintonizar a magia da ilha) e possuem bolsos infinitos nas suas vestes. Os seus olhos costumam brilhar quando veem algo de valor.</p>
+            </div>
+
+            <h3 class="sub-titulo">Habilidades Iniciais</h3>
+            <div class="hab-item"><strong>"Adivinhe meu nome":</strong> <p>Confunde um inimigo contando uma charada. O inimigo perde 1 ação de ataque pensando no próximo turno.</p></div>
+
+            <h3 class="sub-titulo">Item</h3>
+            <div class="hab-item">
+                <strong>Moeda de Ouro de Rumpelstiltskin:</strong>
+                <p>Uma moeda que sempre volta para o bolso do Gnomo após 1 hora de ser gasta. Dá um bônus de +2 em Carisma para negociações simples.</p>
+            </div>
+
+            <hr class="separator">
+
+            <h3 class="sub-titulo">⚔️ Progressão de Níveis</h3>
+            <table class="level-table">
+                <thead><tr><th>Nível</th><th>Bônus / Evolução</th></tr></thead>
+                <tbody>
+                    <tr><td class="level-num">Lvl 1</td><td>+1 Reflexo | +1 Carisma</td></tr>
+                    <tr><td class="level-num">Lvl 2</td><td>Habilidade: <strong>Roubo Furtivo</strong></td></tr>
+                    <tr><td class="level-num">Lvl 3</td><td>+1 Furtividade | +2 Carisma</td></tr>
+                    <tr><td class="level-num">Lvl 4</td><td>Habilidade: <strong>Réplica Exata</strong></td></tr>
+                    <tr><td class="level-num">Lvl 5</td><td>Habilidade: <strong>Roubo Furtivo II</strong></td></tr>
+                    <tr><td class="level-num">Lvl 6</td><td>+2 Essência | +1 Carisma</td></tr>
+                    <tr><td class="level-num">Lvl 7</td><td>Habilidade: <strong>Ilusão</strong></td></tr>
+                    <tr><td class="level-num">Lvl 8</td><td>Habilidade: <strong>Vômito Arco-íris</strong></td></tr>
+                    <tr><td class="level-num">Lvl 9</td><td>+2 Essência | +2 Furtividade</td></tr>
+                    <tr><td class="level-num">Lvl 10</td><td>+2 Furtividade | +2 Carisma</td></tr>
+                    <tr><td class="level-num">Lvl 11</td><td>Habilidade: <strong>Desestabilização Trolística</strong></td></tr>
+                    <tr><td class="level-num">Lvl 12</td><td>+2 Essência | +2 Furtividade</td></tr>
+                    <tr><td class="level-num">Lvl 13</td><td>Habilidade: <strong>Árvore!!!</strong></td></tr>
+                    <tr><td class="level-num">Lvl 14</td><td>+1 Furtividade | +2 Carisma</td></tr>
+                    <tr><td class="level-num">Lvl 15</td><td>Habilidade: <strong>Investida Mordidística</strong></td></tr>
+                </tbody>
+            </table>
+
+            <h3 class="sub-titulo">Informações de Habilidades</h3>
+            <div class="hab-item1"><strong>Roubo Furtivo I:</strong> <p>O Gnomo rouba qualquer coisa de um bolso/bolsa de um alvo com um teste somado à Furtividade; o alvo rola um teste somado à Percepção e precisa tirar mais que o Gnomo.</p></div>
+            <div class="hab-item2"><strong>Roubo Furtivo II:</strong> <p>O Gnomo consegue roubar "qualquer coisa" de um alvo, mas precisa colocar um item para substituir o roubado. O alvo rola percepção contra a furtividade do Gnomo.</p></div>
+            <div class="hab-item3"><strong>Réplica Exata:</strong> <p>Com qualquer material, o Gnomo faz uma réplica de algo (extremamente frágil, e perceptível se olhada por um tempo).</p></div>
+            <div class="hab-item4"><strong>Inverdade Calúniana:</strong> <p>O Gnomo conta uma mentira com um teste + (Carisma × 2), e todos acreditam se tirarem menos em um teste de Percepção — não importa o quão impossível seja (uma vez por dia).</p></div>
+            <div class="hab-item5"><strong>Vômito Arco-íris:</strong> <p>Gasta 2 de Essência. O Gnomo vomita arco-íris até 6 metros à frente, deixando todos com Destreza e Reflexo pela metade e com dificuldade de ficar em pé por causa do piso escorregadio.</p></div>
+            <div class="hab-item6"><strong>Ilusão:</strong> <p>Gasta 3 de Essência para criar uma ilusão de no máximo 3 metros, com pouca coloração.</p></div>
+            <div class="hab-item7"><strong>Desestabilização Trolística:</strong> <p>Gasta 6 de Essência. Gritos de raiva que desestabilizam psicologicamente o alvo com grandes mentiras ou verdades (Teste + Carisma). O alvo gasta sua energia e causa dano dobrado no próximo turno, depois perde 2 pontos em todos os atributos.</p></div>
+            <div class="hab-item8"><strong>Árvore!!!:</strong> <p>Gasta 2 de Essência. O Gnomo vê rapidamente o ponto fraco de uma árvore e a corta; em 2 turnos consegue derrubá-la em qualquer direção, causando 2d20 de dano e possivelmente prendendo o alvo.</p></div>
+            <div class="hab-item9"><strong>Investida Mordidística:</strong> <p>O Gnomo pula e cai fervorosamente no rosto do alvo, mordendo múltiplas vezes: 3d20 de dano.</p></div>
+        </section>
+
+        <hr class="separator">
+
+        <!-- ===================== 4. PORCO ===================== -->
+        <section id="porco">
+            <h2 class="raca-nome">4. Porco</h2>
+            <span class="raca-tags">O Construtor</span>
+
+            <div class="stats-grid">
+                <div class="stat-card"><span class="stat-val">+10</span><span class="stat-label">HP</span></div>
+                <div class="stat-card"><span class="stat-val">+5</span><span class="stat-label">Energia</span></div>
+                <div class="stat-card"><span class="stat-val">+0</span><span class="stat-label">Essência</span></div>
+                <div class="stat-card"><span class="stat-val">+0</span><span class="stat-label">Percepção</span></div>
+                <div class="stat-card"><span class="stat-val">+0</span><span class="stat-label">Reflexo</span></div>
+                <div class="stat-card"><span class="stat-val">-2</span><span class="stat-label">Destreza</span></div>
+                <div class="stat-card"><span class="stat-val">+10</span><span class="stat-label">Força</span></div>
+                <div class="stat-card"><span class="stat-val">+2</span><span class="stat-label">Carisma</span></div>
+                <div class="stat-card"><span class="stat-val">+0</span><span class="stat-label">Furtividade</span></div>
+            </div>
+
+            <h3 class="sub-titulo">Sobre</h3>
+            <div class="hab-item">
+                <p>Os Porcos são os grandes engenheiros da floresta, embora sua fama venha tanto de suas obras quanto de sua lendária preguiça. Frequentemente subestimados pelo passo lento e pelo apetite insaciável, eles guardam um talento nato para a construção. Expulsos de casa ao atingir a maturidade, cada porco descobre que, entre um bocejo e um lanche, suas mãos são capazes de erguer castelos onde outros veriam apenas lama e palha.</p>
+            </div>
+
+            <h3 class="sub-titulo">Aparência</h3>
+            <div class="hab-item">
+                <p>Possuem cerca de dois terços da altura de um humano, com uma pele que varia entre o rosado e o bronze. Embora tenham uma aparência bonachona e roliça, escondem braços surpreendentemente musculosos. Possuem quatro extremidades (patas), mas utilizam as frontais com a mesma destreza de mãos humanas, permitindo-lhes manusear ferramentas pesadas com facilidade.</p>
+            </div>
+
+            <h3 class="sub-titulo">Habilidades Iniciais</h3>
+            <div class="hab-item"><strong>Super Investida Pesada (Ativa):</strong> <p>O Porco corre em linha reta e acerta o alvo com o ombro. Causa dano igual a Força + Destreza e empurra o alvo 3 metros.</p></div>
+            <div class="hab-item"><strong>Construção I:</strong> <p>O Porco pode construir com seus materiais ferramentas como Espadas, Picaretas e Machado, gastando -6 de Energia.</p></div>
+
+            <h3 class="sub-titulo">Item</h3>
+            <div class="hab-item">
+                <strong>Trena de Bronze Encantada:</strong>
+                <p>Facilita construções e reparos: o Porco pode rolar o dado duas vezes e escolher o melhor valor.</p>
+            </div>
+
+            <hr class="separator">
+
+            <h3 class="sub-titulo">⚔️ Progressão de Níveis</h3>
+            <table class="level-table">
+                <thead><tr><th>Nível</th><th>Bônus / Evolução</th></tr></thead>
+                <tbody>
+                    <tr><td class="level-num">Lvl 1</td><td>+2 Energia | +1 Carisma</td></tr>
+                    <tr><td class="level-num">Lvl 2</td><td>Habilidade: <strong>Olhar do Arquiteto</strong></td></tr>
+                    <tr><td class="level-num">Lvl 3</td><td>+2 Energia | +2 Carisma</td></tr>
+                    <tr><td class="level-num">Lvl 4</td><td>Habilidade: <strong>Construção II</strong></td></tr>
+                    <tr><td class="level-num">Lvl 5</td><td>Habilidade: <strong>Pele de Tijolo I</strong></td></tr>
+                    <tr><td class="level-num">Lvl 6</td><td>+2 HP | +2 Força</td></tr>
+                    <tr><td class="level-num">Lvl 7</td><td>+2 Energia | +2 Carisma</td></tr>
+                    <tr><td class="level-num">Lvl 8</td><td>Habilidade: <strong>Construção III</strong></td></tr>
+                    <tr><td class="level-num">Lvl 9</td><td>+2 Energia | +2 Carisma</td></tr>
+                    <tr><td class="level-num">Lvl 10</td><td>Habilidade: <strong>Pele de Tijolo II</strong></td></tr>
+                    <tr><td class="level-num">Lvl 11</td><td>Habilidade: <strong>Olhar do Arquiteto II</strong></td></tr>
+                    <tr><td class="level-num">Lvl 12</td><td>+2 Energia | +2 Carisma</td></tr>
+                    <tr><td class="level-num">Lvl 13</td><td>Habilidade: <strong>Pele de Tijolo III</strong></td></tr>
+                    <tr><td class="level-num">Lvl 14</td><td>+2 Energia | +1 Carisma</td></tr>
+                    <tr><td class="level-num">Lvl 15</td><td>Habilidade: <strong>Rei das Construções</strong></td></tr>
+                </tbody>
+            </table>
+
+            <h3 class="sub-titulo">Informações de Habilidades</h3>
+            <div class="hab-item1"><strong>Construção II:</strong> <p>O Porco consegue construir casas, além de Espadas, Picaretas, Machado, Pá, Enxada e vara de pesca, gastando -4 de Energia.</p></div>
+            <div class="hab-item2"><strong>Rei das Construções:</strong> <p>O Porco consegue construir qualquer edifício e qualquer ferramenta, gastando apenas -2 de Energia.</p></div>
+            <div class="hab-item3"><strong>Pele de Tijolo I:</strong> <p>Sua camada de gordura e pele grossa ignora 1 ponto de dano físico de qualquer ataque.</p></div>
+            <div class="hab-item4"><strong>Pele de Tijolo II:</strong> <p>Ignora 2 pontos de dano físico e torna o personagem impossível de ser empurrado por inimigos menores.</p></div>
+            <div class="hab-item5"><strong>Pele de Tijolo III:</strong> <p>Ignora 3 pontos de dano físico e torna o personagem impossível de ser empurrado.</p></div>
+            <div class="hab-item6"><strong>Olhar do Arquiteto I:</strong> <p>O Porco identifica pontos fracos em estruturas (portas, paredes, baús), recebendo +2 de dano ao tentar quebrá-los.</p></div>
+            <div class="hab-item7"><strong>Olhar do Arquiteto II:</strong> <p>O Porco consegue "sentir" materiais de construção escondidos (madeira boa, pedra, metal) ao redor, facilitando a coleta de recursos.</p></div>
+        </section>
+
+        <hr class="separator">
+
+        <!-- ===================== 5. CABRITO ===================== -->
+        <section id="cabrito">
+            <h2 class="raca-nome">5. Cabrito</h2>
+            <span class="raca-tags">O Ágil</span>
+
+            <div class="stats-grid">
+                <div class="stat-card"><span class="stat-val">+2</span><span class="stat-label">HP</span></div>
+                <div class="stat-card"><span class="stat-val">+2</span><span class="stat-label">Energia</span></div>
+                <div class="stat-card"><span class="stat-val">+0</span><span class="stat-label">Essência</span></div>
+                <div class="stat-card"><span class="stat-val">+4</span><span class="stat-label">Percepção</span></div>
+                <div class="stat-card"><span class="stat-val">+6</span><span class="stat-label">Reflexo</span></div>
+                <div class="stat-card"><span class="stat-val">+6</span><span class="stat-label">Destreza</span></div>
+                <div class="stat-card"><span class="stat-val">+0</span><span class="stat-label">Força</span></div>
+                <div class="stat-card"><span class="stat-val">+0</span><span class="stat-label">Carisma</span></div>
+                <div class="stat-card"><span class="stat-val">+5</span><span class="stat-label">Furtividade</span></div>
+            </div>
+
+            <h3 class="sub-titulo">Sobre</h3>
+            <div class="hab-item">
+                <p>Os Cabritos desta floresta são mestres da sobrevivência urbana e selvagem. Eles possuem uma percepção aguda do tempo e do espaço, acreditando que o relógio da vida corre a seu favor. São conhecidos por serem os melhores em jogos de esconde-esconde, usando qualquer fresta ou objeto para desaparecer da vista dos predadores.</p>
+            </div>
+
+            <h3 class="sub-titulo">Aparência</h3>
+            <div class="hab-item">
+                <p>Pequenos, com cascos rápidos e chifres ainda em crescimento que demonstram sua juventude eterna. Possuem pelos curtos, geralmente brancos ou acinzentados, e olhos grandes que parecem captar cada movimento ao redor. Sua fisionomia é voltada para o salto e a fuga rápida.</p>
+            </div>
+
+            <h3 class="sub-titulo">Habilidades Iniciais</h3>
+            <div class="hab-item"><strong>Relógio do Sétimo:</strong> <p>O Cabrito sabe o tempo exato de tudo. Pode dar um bônus de +5 de Reflexo para um aliado em um teste de desvio.</p></div>
+            <div class="hab-item"><strong>Esconderijo Perfeito:</strong> <p>Pode se esconder em lugares minúsculos e não pode ser detectado, a menos que alguém abra o objeto.</p></div>
+
+            <h3 class="sub-titulo">Item</h3>
+            <div class="hab-item">
+                <strong>Giz Branco de Sacristia:</strong>
+                <p>O Cabrito pode passar esse giz nas patas; se usado em si mesmo, concede +5 de Furtividade.</p>
+            </div>
+
+            <hr class="separator">
+
+            <h3 class="sub-titulo">⚔️ Progressão de Níveis</h3>
+            <table class="level-table">
+                <thead><tr><th>Nível</th><th>Bônus / Evolução</th></tr></thead>
+                <tbody>
+                    <tr><td class="level-num">Lvl 1</td><td>+2 Reflexo | +1 Destreza</td></tr>
+                    <tr><td class="level-num">Lvl 2</td><td>Habilidade: <strong>Esconderijo Perfeito II</strong></td></tr>
+                    <tr><td class="level-num">Lvl 3</td><td>+2 Furtividade | +2 Percepção</td></tr>
+                    <tr><td class="level-num">Lvl 4</td><td>+2 Destreza | +2 Reflexo</td></tr>
+                    <tr><td class="level-num">Lvl 5</td><td>Habilidade: <strong>Passo Leve I</strong></td></tr>
+                    <tr><td class="level-num">Lvl 6</td><td>+2 Energia | +2 HP</td></tr>
+                    <tr><td class="level-num">Lvl 7</td><td>+2 Percepção | +2 Furtividade</td></tr>
+                    <tr><td class="level-num">Lvl 8</td><td>+2 Destreza | +2 Reflexo</td></tr>
+                    <tr><td class="level-num">Lvl 9</td><td>Habilidade: <strong>Relógio do Sétimo II</strong></td></tr>
+                    <tr><td class="level-num">Lvl 10</td><td>+2 Reflexo | +2 Percepção</td></tr>
+                    <tr><td class="level-num">Lvl 11</td><td>Habilidade: <strong>Salto Acrobático</strong></td></tr>
+                    <tr><td class="level-num">Lvl 12</td><td>Habilidade: <strong>Esconderijo Perfeito III</strong></td></tr>
+                    <tr><td class="level-num">Lvl 13</td><td>+5 Reflexo | +2 Destreza</td></tr>
+                    <tr><td class="level-num">Lvl 14</td><td>Habilidade: <strong>Passo Leve II</strong></td></tr>
+                    <tr><td class="level-num">Lvl 15</td><td>Habilidade: <strong>Relógio do Mestre Sétimo</strong></td></tr>
+                </tbody>
+            </table>
+
+            <h3 class="sub-titulo">Informações de Habilidades</h3>
+            <div class="hab-item1"><strong>Relógio do Sétimo II:</strong> <p>O bônus de Reflexo concedido a um aliado aumenta para +8.</p></div>
+            <div class="hab-item2"><strong>Relógio do Mestre Sétimo:</strong> <p>O aliado ganha uma ação de movimento extra no turno, além do bônus de Reflexo permanecer em +8.</p></div>
+            <div class="hab-item3"><strong>Esconderijo Perfeito II:</strong> <p>Pode levar um aliado pequeno para dentro do esconderijo.</p></div>
+            <div class="hab-item4"><strong>Esconderijo Perfeito III:</strong> <p>Após se esconder, pode executar um ataque surpresa com dano dobrado, impossível de desviar a menos que o alvo tire um crítico no teste.</p></div>
+            <div class="hab-item5"><strong>Passo Leve I:</strong> <p>Concede +2 em testes de fuga.</p></div>
+            <div class="hab-item6"><strong>Passo Leve II:</strong> <p>Concede +5 em testes de fuga.</p></div>
+            <div class="hab-item7"><strong>Salto Acrobático:</strong> <p>O Cabrito pula 2x sua altura.</p></div>
+        </section>
+
+        <hr class="separator">
+
+        <!-- ===================== 6. CORDEIRO ===================== -->
+        <section id="cordeiro">
+            <h2 class="raca-nome">6. Cordeiro</h2>
+            <span class="raca-tags">O Diplomata</span>
+
+            <div class="stats-grid">
+                <div class="stat-card"><span class="stat-val">+5</span><span class="stat-label">HP</span></div>
+                <div class="stat-card"><span class="stat-val">+5</span><span class="stat-label">Energia</span></div>
+                <div class="stat-card"><span class="stat-val">+2</span><span class="stat-label">Essência</span></div>
+                <div class="stat-card"><span class="stat-val">+2</span><span class="stat-label">Percepção</span></div>
+                <div class="stat-card"><span class="stat-val">+2</span><span class="stat-label">Reflexo</span></div>
+                <div class="stat-card"><span class="stat-val">+2</span><span class="stat-label">Destreza</span></div>
+                <div class="stat-card"><span class="stat-val">+0</span><span class="stat-label">Força</span></div>
+                <div class="stat-card"><span class="stat-val">+7</span><span class="stat-label">Carisma</span></div>
+                <div class="stat-card"><span class="stat-val">+0</span><span class="stat-label">Furtividade</span></div>
+            </div>
+
+            <h3 class="sub-titulo">Sobre</h3>
+            <div class="hab-item">
+                <p>O Cordeiro luta com palavras e presença capazes de desarmar a fúria do maior dos ogros com apenas um olhar piedoso. Muitos acreditam que sua lã possui propriedades calmantes e que sua presença atrai a sorte e a tranquilidade para qualquer grupo de aventureiros.</p>
+            </div>
+
+            <h3 class="sub-titulo">Aparência</h3>
+            <div class="hab-item">
+                <p>Extremamente fofos e elegantes, com uma lã volumosa, limpa e macia que parece brilhar sob a luz do sol. Seus movimentos são calmos e graciosos, e seus olhos transmitem uma pureza que faz até o mais vil dos inimigos hesitar antes de atacar.</p>
+            </div>
+
+            <h3 class="sub-titulo">Habilidades Iniciais</h3>
+            <div class="hab-item"><strong>Berrante Ensurdecedor (Ativa):</strong> <p>Um grito que não causa dano físico, mas reduz o acerto (1d20) do inimigo em -2 no próximo turno, uma vez por batalha.</p></div>
+            <div class="hab-item"><strong>Pele de Cordeiro:</strong> <p>O Cordeiro é tão fofo que os inimigos hesitam em atacá-lo primeiro. Ele sempre é o último alvo focado em um combate.</p></div>
+
+            <h3 class="sub-titulo">Item</h3>
+            <div class="hab-item">
+                <strong>Sino de Prata do Pastor:</strong>
+                <p>O som acalma criaturas selvagens e aliados. Uma vez por combate, o Cordeiro pode tocar o sino para que ele e todos os aliados recuperem 3 de HP devido à sensação de paz.</p>
+            </div>
+
+            <hr class="separator">
+
+            <h3 class="sub-titulo">⚔️ Progressão de Níveis</h3>
+            <table class="level-table">
+                <thead><tr><th>Nível</th><th>Bônus / Evolução</th></tr></thead>
+                <tbody>
+                    <tr><td class="level-num">Lvl 1</td><td>+2 Carisma | +1 Essência</td></tr>
+                    <tr><td class="level-num">Lvl 2</td><td>Habilidade: <strong>Pele de Cordeiro II</strong></td></tr>
+                    <tr><td class="level-num">Lvl 3</td><td>+2 Energia | +2 Carisma</td></tr>
+                    <tr><td class="level-num">Lvl 4</td><td>+2 Essência | +2 Carisma</td></tr>
+                    <tr><td class="level-num">Lvl 5</td><td>Habilidade: <strong>Voz de Veludo I</strong></td></tr>
+                    <tr><td class="level-num">Lvl 6</td><td>+2 HP | +2 Energia</td></tr>
+                    <tr><td class="level-num">Lvl 7</td><td>+2 Carisma | +2 Percepção</td></tr>
+                    <tr><td class="level-num">Lvl 8</td><td>+2 Carisma | +2 Essência</td></tr>
+                    <tr><td class="level-num">Lvl 9</td><td>Habilidade: <strong>Berrante Ensurdecedor II</strong></td></tr>
+                    <tr><td class="level-num">Lvl 10</td><td>+2 Carisma | +2 HP</td></tr>
+                    <tr><td class="level-num">Lvl 11</td><td>Habilidade: <strong>Palavra de Paz (Ativa)</strong></td></tr>
+                    <tr><td class="level-num">Lvl 12</td><td>Habilidade: <strong>Voz de Veludo II</strong></td></tr>
+                    <tr><td class="level-num">Lvl 13</td><td>+5 Carisma | +2 Essência</td></tr>
+                    <tr><td class="level-num">Lvl 14</td><td>Habilidade: <strong>Pele de Cordeiro III</strong></td></tr>
+                    <tr><td class="level-num">Lvl 15</td><td>Habilidade: <strong>O Rugido da Paz (Ativa)</strong></td></tr>
+                </tbody>
+            </table>
+
+            <h3 class="sub-titulo">Informações de Habilidades</h3>
+            <div class="hab-item1"><strong>Voz de Veludo I:</strong> <p>O Cordeiro pode rolar dois dados para negociar.</p></div>
+            <div class="hab-item2"><strong>Voz de Veludo II:</strong> <p>O Cordeiro pode rolar dois dados para negociar e em discussões.</p></div>
+            <div class="hab-item3"><strong>Berrante Ensurdecedor II (Ativa):</strong> <p>Reduz o acerto de até 3 inimigos próximos em -5.</p></div>
+            <div class="hab-item4"><strong>O Rugido da Paz (Ativa):</strong> <p>O grito atordoa o inimigo, fazendo-o perder a ação de movimento (uma vez por batalha).</p></div>
+            <div class="hab-item5"><strong>Palavra de Paz (Ativa):</strong> <p>Habilidade poderosa que pode interromper uma luta já iniciada, forçando todos a ouvirem o Cordeiro por um breve momento.</p></div>
+            <div class="hab-item6"><strong>Pele de Cordeiro II:</strong> <p>Inimigos que atacarem o Cordeiro causam -2 de dano, por remorso.</p></div>
+            <div class="hab-item7"><strong>Pele de Cordeiro III:</strong> <p>Aliados próximos ao Cordeiro recebem -2 de dano.</p></div>
+        </section>
+
+        <hr class="separator">
+
+        <!-- ===================== 7. GATO ===================== -->
+        <section id="gato">
+            <h2 class="raca-nome">7. Gato</h2>
+            <span class="raca-tags">O Espadachim</span>
+
+            <div class="stats-grid">
+                <div class="stat-card"><span class="stat-val">+2</span><span class="stat-label">HP</span></div>
+                <div class="stat-card"><span class="stat-val">+2</span><span class="stat-label">Energia</span></div>
+                <div class="stat-card"><span class="stat-val">+0</span><span class="stat-label">Essência</span></div>
+                <div class="stat-card"><span class="stat-val">+4</span><span class="stat-label">Percepção</span></div>
+                <div class="stat-card"><span class="stat-val">+7</span><span class="stat-label">Reflexo</span></div>
+                <div class="stat-card"><span class="stat-val">+5</span><span class="stat-label">Destreza</span></div>
+                <div class="stat-card"><span class="stat-val">+0</span><span class="stat-label">Força</span></div>
+                <div class="stat-card"><span class="stat-val">+2</span><span class="stat-label">Carisma</span></div>
+                <div class="stat-card"><span class="stat-val">+3</span><span class="stat-label">Furtividade</span></div>
+            </div>
+
+            <h3 class="sub-titulo">Sobre</h3>
+            <div class="hab-item">
+                <p>Muitos subestimam o Gato pelo seu tamanho, mas poucos vivem para contar como foram desarmados antes mesmo de sacarem suas espadas. Os Gatos Espadachins são aventureiros refinados que preferem a astúcia à força bruta. Mestres em nomes falsos e títulos inventados (como o famoso Marquês de Carabás), eles caminham entre a nobreza e as sombras da floresta com a mesma facilidade, sempre buscando glória, ouro e, claro, um par de botas que combine com seu estilo.</p>
+            </div>
+
+            <h3 class="sub-titulo">Aparência</h3>
+            <div class="hab-item">
+                <p>Pequenos, ágeis e sempre impecavelmente limpos. Possuem pelos macios que cuidam com extrema vaidade. Seus olhos grandes são sua maior arma de manipulação, capazes de derreter o coração do mais cruel ogro. Embora pequenos, sua postura é de um gigante, mantendo sempre a coluna ereta e a mão (ou pata) pronta na altura da cintura, onde estaria sua espada.</p>
+            </div>
+
+            <h3 class="sub-titulo">Habilidades Iniciais</h3>
+            <div class="hab-item"><strong>Marquês de Carabás:</strong> <p>Através de mentiras convincentes, o Gato consegue descontos de 2 moedas de prata em qualquer compra na vila.</p></div>
+            <div class="hab-item"><strong>Nove Vidas:</strong> <p>9 vezes por campanha, se o HP do Gato chegar a 0, ele retorna com 1 de HP instantaneamente.</p></div>
+
+            <h3 class="sub-titulo">Itens</h3>
+            <div class="hab-item">
+                <strong>Florete Lendário:</strong>
+                <p>Feito de ouro; quando o Gato o utiliza, ganha +2 Passos e +5 Força durante as batalhas.</p>
+            </div>
+            <div class="hab-item">
+                <strong>Botas Encantadas:</strong>
+                <p>Quando usadas, concedem +5 Passos e +5 Reflexo durante as batalhas, mas -3 de Furtividade.</p>
+            </div>
+
+            <hr class="separator">
+
+            <h3 class="sub-titulo">⚔️ Progressão de Níveis</h3>
+            <table class="level-table">
+                <thead><tr><th>Nível</th><th>Bônus / Evolução</th></tr></thead>
+                <tbody>
+                    <tr><td class="level-num">Lvl 1</td><td>+2 Reflexo | +1 Destreza</td></tr>
+                    <tr><td class="level-num">Lvl 2</td><td>Habilidade: <strong>Garrada Feroz</strong> (requer Botas Encantadas)</td></tr>
+                    <tr><td class="level-num">Lvl 3</td><td>+2 Energia | +2 Furtividade</td></tr>
+                    <tr><td class="level-num">Lvl 4</td><td>Habilidade: <strong>Sempre de Pé</strong></td></tr>
+                    <tr><td class="level-num">Lvl 5</td><td>Habilidade: <strong>Pulo do Gato (Ativa)</strong></td></tr>
+                    <tr><td class="level-num">Lvl 6</td><td>+2 Energia | +2 Furtividade</td></tr>
+                    <tr><td class="level-num">Lvl 7</td><td>Habilidade: <strong>Desafio do Duelista (Ativa)</strong></td></tr>
+                    <tr><td class="level-num">Lvl 8</td><td>+2 Energia | +2 HP</td></tr>
+                    <tr><td class="level-num">Lvl 9</td><td>+2 HP | +3 Reflexo</td></tr>
+                    <tr><td class="level-num">Lvl 10</td><td>Habilidade: <strong>Agilidade Felina (Ativa)</strong></td></tr>
+                    <tr><td class="level-num">Lvl 11</td><td>+2 Destreza | +1 HP</td></tr>
+                    <tr><td class="level-num">Lvl 12</td><td>Habilidade: <strong>Escapada Incrível (Ativa)</strong></td></tr>
+                    <tr><td class="level-num">Lvl 13</td><td>+2 HP | +3 Destreza</td></tr>
+                    <tr><td class="level-num">Lvl 14</td><td>Habilidade: <strong>Estocada Veloz</strong> (requer Florete Lendário) / <strong>Arranhada Fatal</strong> (requer Botas)</td></tr>
+                    <tr><td class="level-num">Lvl 15</td><td>Habilidade: <strong>Lenda de Gatuno (Ativa)</strong></td></tr>
+                </tbody>
+            </table>
+
+            <h3 class="sub-titulo">Informações de Habilidades</h3>
+            <div class="hab-item1"><strong>Garrada Feroz (Ativa — Nível 2 / Botas Encantadas):</strong> <p>O Gato ativa suas garras e causa dano baseado em Reflexo: 1d20 + Reflexo por garrada (máximo 2).</p></div>
+            <div class="hab-item2"><strong>Estocada Veloz (Ativa — Nível 14 / Florete Lendário):</strong> <p>A estocada do Florete Lendário causa 2d8 + Reflexo e Sangramento Leve.</p></div>
+            <div class="hab-item3"><strong>Sempre de Pé:</strong> <p>O Gato aprende a cair de pé e não leva dano de queda caso caia de menos de 12 metros de altura.</p></div>
+            <div class="hab-item4"><strong>Pulo do Gato (Ativa):</strong> <p>Gasta 2 de Energia. O Gato dá um pulo e se agarra no alvo, causando 1d20 de dano e impedindo-o de atacar por 1 turno.</p></div>
+            <div class="hab-item5"><strong>Desafio do Duelista (Ativa):</strong> <p>O Gato foca em um alvo e causa +4 de dano até atacar outro alvo ou sair de batalha.</p></div>
+            <div class="hab-item6"><strong>Agilidade Felina (Ativa):</strong> <p>Gasta 2 de Energia (ação livre). Dobra sua movimentação e concede 1 turno extra.</p></div>
+            <div class="hab-item7"><strong>Escapada Incrível (Ativa):</strong> <p>Gasta 1 de Energia. Caso o Gato tenha sido capturado, ele machuca o alvo e se solta, causando 2d6 + Destreza de dano.</p></div>
+            <div class="hab-item8"><strong>Arranhada Fatal (Ativa — Nível 14 / Botas Encantadas):</strong> <p>Gasta 2 de Energia. O Gato arranha com mais força de forma linear, causando 1d20 + Reflexo + Sangramento Severo.</p></div>
+            <div class="hab-item9"><strong>Espadas Cruzadas (Ativa — Nível 14 / Florete Lendário):</strong> <p>Gasta 1 de Energia. Durante uma luta com mais de um alvo de espada ao mesmo tempo, o Gato se defende prendendo as "espadas" e ganha um turno extra para atacar um dos alvos.</p></div>
+            <div class="hab-item10"><strong>Lenda de Gatuno (Ativa):</strong> <p>Gasta 6 de Energia. O Gato ativa suas garras e ataca continuamente o alvo várias vezes, tão rápido que quase não é visível a olho nu: 8d20 de dano + Sangramento Normal.</p></div>
+        </section>
+
+        <hr class="separator">
+
+        <!-- ===================== 8. ANÃO ===================== -->
+        <section id="anao">
+            <h2 class="raca-nome">8. Anão</h2>
+            <span class="raca-tags">O Minerador</span>
+
+            <div class="stats-grid">
+                <div class="stat-card"><span class="stat-val">+7</span><span class="stat-label">HP</span></div>
+                <div class="stat-card"><span class="stat-val">+8</span><span class="stat-label">Energia</span></div>
+                <div class="stat-card"><span class="stat-val">+0</span><span class="stat-label">Essência</span></div>
+                <div class="stat-card"><span class="stat-val">+2</span><span class="stat-label">Percepção</span></div>
+                <div class="stat-card"><span class="stat-val">+0</span><span class="stat-label">Reflexo</span></div>
+                <div class="stat-card"><span class="stat-val">+0</span><span class="stat-label">Destreza</span></div>
+                <div class="stat-card"><span class="stat-val">+6</span><span class="stat-label">Força</span></div>
+                <div class="stat-card"><span class="stat-val">+0</span><span class="stat-label">Carisma</span></div>
+                <div class="stat-card"><span class="stat-val">+2</span><span class="stat-label">Furtividade</span></div>
+            </div>
+
+            <h3 class="sub-titulo">Sobre</h3>
+            <div class="hab-item">
+                <p>Os Anões são Mineradores natos das montanhas. Eles possuem uma conexão com as pedras e metais. Embora baixos, sua densidade muscular é incrível, tornando-os pesados e difíceis de derrubar. São conhecidos por suas cantorias rítmicas que mantêm o moral do grupo alto mesmo nas cavernas mais profundas e escuras.</p>
+            </div>
+
+            <h3 class="sub-titulo">Aparência</h3>
+            <div class="hab-item">
+                <p>Baixos, robustos e geralmente ostentando barbas que são seu maior orgulho. Suas mãos são calejadas pelo uso constante da picareta e suas roupas são reforçadas com couro e metal. Carregam sempre um olhar atento, como se estivessem avaliando a pureza de cada rocha ao redor.</p>
+            </div>
+
+            <h3 class="sub-titulo">Habilidades Iniciais</h3>
+            <div class="hab-item"><strong>Golpe de Picareta:</strong> <p>Ignora qualquer armadura ou pele grossa do inimigo (dano direto no HP).</p></div>
+            <div class="hab-item"><strong>Cantoria:</strong> <p>Canta uma canção que recupera +3 de Energia para todos os aliados próximos.</p></div>
+            <div class="hab-item"><strong>Olhar do Garimpeiro:</strong> <p>Pode identificar o valor exato de qualquer item ou joia e encontrar passagens secretas em cavernas.</p></div>
+
+            <h3 class="sub-titulo">Itens</h3>
+            <div class="hab-item">
+                <strong>Lanterna de Sete Cores:</strong>
+                <p>Não precisa de óleo e brilha através de qualquer névoa ou escuridão mágica, em 7 cores.</p>
+            </div>
+            <div class="hab-item">
+                <strong>Cinto de Carga Pesada Bonito:</strong>
+                <p>Permite carregar o dobro de itens e concede +5 de HP enquanto utilizado.</p>
+            </div>
+
+            <hr class="separator">
+
+            <h3 class="sub-titulo">⚔️ Progressão de Níveis</h3>
+            <table class="level-table">
+                <thead><tr><th>Nível</th><th>Bônus / Evolução</th></tr></thead>
+                <tbody>
+                    <tr><td class="level-num">Lvl 1</td><td>+2 Força | +1 HP</td></tr>
+                    <tr><td class="level-num">Lvl 2</td><td>Habilidade: <strong>Cantoria de Trabalho (Ativa)</strong></td></tr>
+                    <tr><td class="level-num">Lvl 3</td><td>+2 Energia | +2 Percepção</td></tr>
+                    <tr><td class="level-num">Lvl 4</td><td>Habilidade: <strong>Giro de Britadeira (Ativa)</strong></td></tr>
+                    <tr><td class="level-num">Lvl 5</td><td>+3 Força | +2 HP</td></tr>
+                    <tr><td class="level-num">Lvl 6</td><td>Habilidade: <strong>Pele de Rocha (Ativa)</strong></td></tr>
+                    <tr><td class="level-num">Lvl 7</td><td>+2 Percepção | +2 Energia</td></tr>
+                    <tr><td class="level-num">Lvl 8</td><td>Habilidade: <strong>Luz Ofuscante</strong> (Lanterna) / <strong>Pancada de Mochila</strong> (Cinto)</td></tr>
+                    <tr><td class="level-num">Lvl 9</td><td>+5 Força | +2 HP</td></tr>
+                    <tr><td class="level-num">Lvl 10</td><td>Habilidade: <strong>Arremesso de Picareta</strong> (Lanterna) / <strong>Estoque de Emergência</strong> (Cinto)</td></tr>
+                    <tr><td class="level-num">Lvl 11</td><td>+3 Energia | +3 Percepção</td></tr>
+                    <tr><td class="level-num">Lvl 12</td><td>Habilidade: <strong>Grito da Montanha (Ativa)</strong></td></tr>
+                    <tr><td class="level-num">Lvl 13</td><td>+2 Força | +2 HP</td></tr>
+                    <tr><td class="level-num">Lvl 14</td><td>Habilidade: <strong>Terremoto Localizado (Ativa)</strong></td></tr>
+                    <tr><td class="level-num">Lvl 15</td><td>Habilidade: <strong>ANÃO DE FERRO!</strong></td></tr>
+                </tbody>
+            </table>
+
+            <h3 class="sub-titulo">Informações de Habilidades</h3>
+            <div class="hab-item1"><strong>Cantoria de Trabalho (Ativa):</strong> <p>Gasta 3 de Energia. O Anão entoa um hino rítmico; todos os aliados em um raio de 5 metros recuperam +4 de Energia imediatamente.</p></div>
+            <div class="hab-item2"><strong>Giro de Britadeira (Ativa):</strong> <p>Gasta 4 de Energia. O Anão gira com sua picareta como uma furadeira, causando 2d10 + Força; se crítico, causa Sangramento Severo.</p></div>
+            <div class="hab-item3"><strong>Pele de Rocha (Ativa):</strong> <p>Gasta 3 de Energia. Por 2 turnos o corpo do Anão fica duro como granito, reduzindo todo dano recebido em -5 e tornando-o impossível de ser empurrado.</p></div>
+            <div class="hab-item4"><strong>Luz Ofuscante (Ativa — Nível 8 / Lanterna):</strong> <p>Gasta 2 de Energia. A lanterna emite um flash de 7 cores que deixa os inimigos à frente cegos por 1 turno, e possivelmente desmaiados por epilepsia caso crítico.</p></div>
+            <div class="hab-item5"><strong>Pancada de Mochila (Ativa — Nível 8 / Cinto):</strong> <p>Gasta 3 de Energia. O Anão usa o peso extra de cinto e mochila para uma pancada lateral: 1d12 + Força + (número de itens no inventário). O inimigo é jogado 4 metros para trás e fica atordoado.</p></div>
+            <div class="hab-item6"><strong>Arremesso de Picareta (Ativa — Nível 10 / Lanterna):</strong> <p>Gasta 2 de Energia. O Anão arremessa a picareta, que volta como bumerangue seguindo o rastro de luz da lanterna. Dano 1d12 + Força.</p></div>
+            <div class="hab-item7"><strong>Estoque de Emergência (Ativa — Nível 10 / Cinto):</strong> <p>Uma vez por batalha, o Anão retira uma "Ração de Pedra" do cinto. Ao comer, recupera instantaneamente 10 de HP e 5 de Energia, além de remover envenenamento ou cansaço.</p></div>
+            <div class="hab-item8"><strong>Grito da Montanha (Ativa):</strong> <p>Gasta 4 de Energia. Um rugido poderoso: todos no ambiente tremem, recebendo -2 em todos os atributos por 2 turnos.</p></div>
+            <div class="hab-item9"><strong>Terremoto Localizado (Ativa):</strong> <p>Gasta 6 de Energia. O Anão bate a picareta (ou o pé) no chão com força total; todos os inimigos em raio de 4 metros caem e sofrem 3d12 + Força.</p></div>
+            <div class="hab-item10"><strong>ANÃO DE FERRO!:</strong> <p>O Anão entra em transe de combate. Durante 3 turnos, seu Golpe de Picareta não gasta energia, ganha +15 de HP até o fim da batalha e todo dano causado o cura em 50% do valor. Ao final, fica exausto e não pode correr por 2 turnos.</p></div>
+        </section>
+
+        <hr class="separator">
+
+        <!-- ===================== 9. MACACO ===================== -->
+        <section id="macaco">
+            <h2 class="raca-nome">9. Macaco</h2>
+            <span class="raca-tags">O Acrobático</span>
+
+            <div class="stats-grid">
+                <div class="stat-card"><span class="stat-val">+2</span><span class="stat-label">HP</span></div>
+                <div class="stat-card"><span class="stat-val">+5</span><span class="stat-label">Energia</span></div>
+                <div class="stat-card"><span class="stat-val">+0</span><span class="stat-label">Essência</span></div>
+                <div class="stat-card"><span class="stat-val">+0</span><span class="stat-label">Percepção</span></div>
+                <div class="stat-card"><span class="stat-val">+15</span><span class="stat-label">Reflexo</span></div>
+                <div class="stat-card"><span class="stat-val">+0</span><span class="stat-label">Destreza</span></div>
+                <div class="stat-card"><span class="stat-val">+3</span><span class="stat-label">Força</span></div>
+                <div class="stat-card"><span class="stat-val">+0</span><span class="stat-label">Carisma</span></div>
+                <div class="stat-card"><span class="stat-val">+0</span><span class="stat-label">Furtividade</span></div>
+            </div>
+
+            <h3 class="sub-titulo">Sobre</h3>
+            <div class="hab-item">
+                <p>Os Macacos são os seres mais imprevisíveis da Floresta Encantada. Enquanto outros seguem regras, o Macaco segue nada. Inspirados por lendas de um rei que desafiou os próprios céus, eles veem o mundo como um grande parquinho. Para um macaco, uma batalha não é um conflito, mas uma apresentação de acrobacias onde o objetivo é deixar o inimigo tonto e furioso.</p>
+            </div>
+
+            <h3 class="sub-titulo">Aparência</h3>
+            <div class="hab-item">
+                <p>Possuem corpos leves e cobertos por uma pelagem densa que varia entre o dourado e o castanho. Seu rabo funciona como uma quinta mão. Seus pés também possuem polegares opositores, o que lhes permite lutar pendurados de cabeça para baixo com a mesma facilidade de quem pisa no chão, sempre com um sorriso travesso.</p>
+            </div>
+
+            <h3 class="sub-titulo">Habilidades Iniciais</h3>
+            <div class="hab-item"><strong>Rabo Daora:</strong> <p>Utiliza o rabo para segurar objetos, armas leves ou se pendurar, permitindo usar itens enquanto escala ou realizar uma ação de "mão extra".</p></div>
+            <div class="hab-item"><strong>Provocação Ágil (Ativa):</strong> <p>O Macaco faz caretas e gestos ofensivos; o inimigo é forçado a atacá-lo no próximo turno. Ganha 2 de Energia.</p></div>
+
+            <h3 class="sub-titulo">Itens</h3>
+            <div class="hab-item">
+                <strong>Bastão Extensível de Bambu:</strong>
+                <p>Leve, pode encurtar ou esticar. Em combate, acerta inimigos à distância (+1d8). Fora de combate, garante sucesso automático em saltos de até 4 metros.</p>
+            </div>
+            <div class="hab-item">
+                <strong>Flauta Heroica:</strong>
+                <p>Ao ser tocada, move parte das árvores ou galhos da floresta ao redor, desde fazer alguém tropeçar até criar uma casa gigante ou transporte automático; gasta apenas 1 de Energia em batalhas.</p>
+            </div>
+
+            <hr class="separator">
+
+            <h3 class="sub-titulo">⚔️ Progressão de Níveis</h3>
+            <table class="level-table">
+                <thead><tr><th>Nível</th><th>Bônus / Evolução</th></tr></thead>
+                <tbody>
+                    <tr><td class="level-num">Lvl 1</td><td>+2 Reflexo | +1 HP</td></tr>
+                    <tr><td class="level-num">Lvl 2</td><td>Habilidade: <strong>Voadora de Galho (Ativa)</strong></td></tr>
+                    <tr><td class="level-num">Lvl 3</td><td>+5 Força | +2 HP</td></tr>
+                    <tr><td class="level-num">Lvl 4</td><td>Habilidade: <strong>Punhado de Pêlos (Ativa)</strong></td></tr>
+                    <tr><td class="level-num">Lvl 5</td><td>+4 Reflexo | +3 HP</td></tr>
+                    <tr><td class="level-num">Lvl 6</td><td>Habilidade: <strong>Fúria Rapidamente Rápida (Ativa)</strong></td></tr>
+                    <tr><td class="level-num">Lvl 7</td><td>+6 Reflexo | +2 Força</td></tr>
+                    <tr><td class="level-num">Lvl 8</td><td>Habilidade: <strong>Salto do Titã</strong> / <strong>Flauta Travessa</strong></td></tr>
+                    <tr><td class="level-num">Lvl 9</td><td>+5 Força | +2 HP</td></tr>
+                    <tr><td class="level-num">Lvl 10</td><td>Habilidade: <strong>Giro do Bastão</strong> / <strong>Música do Olhar de Fogo</strong></td></tr>
+                    <tr><td class="level-num">Lvl 11</td><td>+5 Reflexo | +3 HP</td></tr>
+                    <tr><td class="level-num">Lvl 12</td><td>Habilidade: <strong>Combo de Sete Passos (Ativa)</strong></td></tr>
+                    <tr><td class="level-num">Lvl 13</td><td>+2 Reflexo | +2 HP</td></tr>
+                    <tr><td class="level-num">Lvl 14</td><td>Habilidade: <strong>Explosão Cinética (Ativa)</strong></td></tr>
+                    <tr><td class="level-num">Lvl 15</td><td>Habilidade: <strong>Rei MACACO!</strong></td></tr>
+                </tbody>
+            </table>
+
+            <h3 class="sub-titulo">Informações de Habilidades</h3>
+            <div class="hab-item1"><strong>Voadora de Galho (Ativa):</strong> <p>Gasta 2 de Energia. O Macaco usa o rabo para se impulsionar em um pivô, acertando um chute que causa 1d8 + Força + Reflexo e joga o inimigo para trás.</p></div>
+            <div class="hab-item2"><strong>Punhado de Pêlos (Ativa):</strong> <p>Gasta 3 de Energia. O Macaco sopra pelos e cria 2 cópias ilusórias; o inimigo pode se confundir sobre qual é o verdadeiro.</p></div>
+            <div class="hab-item3"><strong>Fúria Rapidamente Rápida (Ativa):</strong> <p>Gasta 2 de Energia. O Macaco desfere 5 golpes rápidos em um único turno: 5d4 + Reflexo + Força.</p></div>
+            <div class="hab-item4"><strong>Salto do Titã (Ativa — Nível 8):</strong> <p>O Macaco estica o bastão para o alto e cai como um meteoro, causando dano em área e deixando os inimigos atordoados por 1 turno: 2d12 + Força.</p></div>
+            <div class="hab-item5"><strong>Flauta Travessa (Ativa — Nível 8):</strong> <p>Gasta 1 de Energia. O Macaco toca uma música que o transforma em um animal pequeno ou objeto por 3 turnos. Se usado em combate para se esconder, o próximo ataque a partir da transformação causa dano em dobro.</p></div>
+            <div class="hab-item6"><strong>Giro do Bastão (Ativa — Nível 10):</strong> <p>Gasta 2 de Energia. O Macaco gira o bastão como um ventilador, criando uma barreira que bloqueia projéteis e causa 1d6 de dano em inimigos ao redor, protegendo aliados se estiver à frente.</p></div>
+            <div class="hab-item7"><strong>Música do Olhar de Fogo (Ativa — Nível 10):</strong> <p>Uma vez por batalha, demora 2 turnos para completar e lança uma rajada de fogo dos olhos em linha reta, causando 2d12 + queimadura por 2 turnos.</p></div>
+            <div class="hab-item8"><strong>Combo de Sete Passos (Ativa):</strong> <p>Gasta 3 de Energia. O Macaco se move tão rápido que parece estar em vários lugares ao mesmo tempo, desferindo 3 ataques em alvos diferentes (ou no mesmo) no mesmo turno: 1d4 + Reflexo por ataque.</p></div>
+            <div class="hab-item9"><strong>Explosão Cinética (Ativa):</strong> <p>Gasta 5 de Energia. O Macaco corre em círculos ao redor do inimigo, acumulando velocidade, e finaliza com um soco carregado: 1d20 + Reflexo + Força + Energia restante.</p></div>
+            <div class="hab-item10"><strong>Rei MACACO!:</strong> <p>Utiliza todas as habilidades desbloqueadas, na ordem que quiser; após o ataque fica zerado de energia e esgotado, perdendo 3 turnos.</p></div>
+        </section>
+
+        <hr class="separator">
+
+        <!-- ===================== 10. OGRO ===================== -->
+        <section id="ogro">
+            <h2 class="raca-nome">10. Ogro</h2>
+            <span class="raca-tags">O Feio</span>
+
+            <div class="stats-grid">
+                <div class="stat-card"><span class="stat-val">+15</span><span class="stat-label">HP</span></div>
+                <div class="stat-card"><span class="stat-val">+6</span><span class="stat-label">Energia</span></div>
+                <div class="stat-card"><span class="stat-val">+5</span><span class="stat-label">Essência</span></div>
+                <div class="stat-card"><span class="stat-val">-3</span><span class="stat-label">Percepção</span></div>
+                <div class="stat-card"><span class="stat-val">-3</span><span class="stat-label">Reflexo</span></div>
+                <div class="stat-card"><span class="stat-val">-3</span><span class="stat-label">Destreza</span></div>
+                <div class="stat-card"><span class="stat-val">+10</span><span class="stat-label">Força</span></div>
+                <div class="stat-card"><span class="stat-val">-6</span><span class="stat-label">Carisma</span></div>
+                <div class="stat-card"><span class="stat-val">-5</span><span class="stat-label">Furtividade</span></div>
+            </div>
+
+            <h3 class="sub-titulo">Sobre</h3>
+            <div class="hab-item">
+                <p>Inspirados nas lendas mais antigas dos ogros, estas criaturas são a definição do "caos natural". Orgulhosos de sua feiura, eles vagam pelo mundo buscando o conforto de um pântano isolado, com uma constituição capaz de comer até raios. Eles não querem ser amados; eles querem ser temidos, e são muito bons nisso.</p>
+            </div>
+
+            <h3 class="sub-titulo">Aparência</h3>
+            <div class="hab-item">
+                <p>Sua pele é de um verde lodo, coberta por verrugas duras como pedra; é comum ver fumaça saindo de suas orelhas quando estão irritados. Eles exalam um cheiro natural que faz flores murcharem e animais menores fugirem. Seu sorriso quebra espelhos.</p>
+            </div>
+
+            <h3 class="sub-titulo">Habilidades Iniciais</h3>
+            <div class="hab-item"><strong>Bafo do Dragão (Ativa):</strong> <p>Gasta 2 de Essência. O Ogro arrota uma rajada de fogo, causando 1d10 + Queimando por 2 turnos.</p></div>
+            <div class="hab-item"><strong>Extremo Berro (Ativa):</strong> <p>Gasta 2 de Energia. Um berro extremamente alto em uma direção causa 1d8 de dano aos ouvidos de todos naquela direção, além de deixá-los levemente surdos.</p></div>
+
+            <h3 class="sub-titulo">Itens</h3>
+            <div class="hab-item">
+                <strong>Colete de Crocodilo:</strong>
+                <p>Feito de couro de crocodilo e madeira petrificada. O Ogro ignora 2 pontos de dano físico, além de causar 2 de dano ao alvo que o atacou (se acertar o colete).</p>
+            </div>
+            <div class="hab-item">
+                <strong>Bastão Feio:</strong>
+                <p>Feito com troncos e uma capa de ferro no topo com espetos de madeira grudados, causando 2d8 + Sangramento de dano.</p>
+            </div>
+
+            <hr class="separator">
+
+            <h3 class="sub-titulo">⚔️ Progressão de Níveis</h3>
+            <table class="level-table">
+                <thead><tr><th>Nível</th><th>Bônus / Evolução</th></tr></thead>
+                <tbody>
+                    <tr><td class="level-num">Lvl 1</td><td>+3 Força | +2 HP</td></tr>
+                    <tr><td class="level-num">Lvl 2</td><td>Habilidade: <strong>Estômago de Aço (Ativa)</strong></td></tr>
+                    <tr><td class="level-num">Lvl 3</td><td>+2 Energia | +2 Essência</td></tr>
+                    <tr><td class="level-num">Lvl 4</td><td>Habilidade: <strong>Sentada do Pântano (Ativa)</strong></td></tr>
+                    <tr><td class="level-num">Lvl 5</td><td>Escolha de <strong>Caminho de Evolução</strong></td></tr>
+                    <tr><td class="level-num">Lvl 6</td><td>+3 HP | +2 Energia</td></tr>
+                    <tr><td class="level-num">Lvl 7</td><td>+2 Força | +2 Energia</td></tr>
+                    <tr><td class="level-num">Lvl 8</td><td>Especialização de Caminho</td></tr>
+                    <tr><td class="level-num">Lvl 9</td><td>+5 Força | +5 HP</td></tr>
+                    <tr><td class="level-num">Lvl 10</td><td>Especialização de Caminho</td></tr>
+                    <tr><td class="level-num">Lvl 11</td><td>+2 Energia | +2 Essência</td></tr>
+                    <tr><td class="level-num">Lvl 12</td><td>Habilidade: <strong>Arroto Atômico (Ativa)</strong></td></tr>
+                    <tr><td class="level-num">Lvl 13</td><td>+2 HP | +2 Energia</td></tr>
+                    <tr><td class="level-num">Lvl 14</td><td>+3 Força | +2 HP</td></tr>
+                    <tr><td class="level-num">Lvl 15</td><td>Habilidade: <strong>O VERDADEIRO OGRO!</strong></td></tr>
+                </tbody>
+            </table>
+
+            <h3 class="sub-titulo">🛤️ Caminhos de Evolução</h3>
+
+            <div class="caminho-box">
+                <p class="caminho-titulo">1. Pesadelo Flamejante (DPS)</p>
+                <ul>
+                    <li><strong>Nível 5 — Fumaça pelas Orelhas (Ativa):</strong> Gasta 2 de Energia. Cria uma fumaça que sai das orelhas e cega o alvo por 2 turnos.</li>
+                    <li><strong>Nível 8 — Combustão Interna:</strong> Gasta 4 de Essência. Por 2 turnos, todos os ataques (físicos ou mágicos) ganham +1d10 de dano de fogo.</li>
+                    <li><strong>Nível 10 — Bola de Fogo Gástrica:</strong> Gasta 5 de Essência. Cospe uma bola de fogo concentrada em um único alvo à distância: 4d12 + Percepção, e incendeia o alvo.</li>
+                </ul>
+            </div>
+
+            <div class="caminho-box">
+                <p class="caminho-titulo">2. Montanha de Músculos (Defesa)</p>
+                <ul>
+                    <li><strong>Nível 5 — Gordura Refletiva (Ativa):</strong> Gasta 2 HP; no próximo ataque recebido, reflete o dano dobrado no atacante.</li>
+                    <li><strong>Nível 8 — Agarre Esmagador:</strong> Gasta 4 de Energia. Agarra um inimigo médio ou pequeno; ele fica imobilizado e recebe 2d8 + Força de dano por turno enquanto agarrado. O Ogro pode usá-lo para bater em outros.</li>
+                    <li><strong>Nível 10 — Cabeçada de Pedra:</strong> Gasta 5 de Energia. Golpe brutal com a testa: 3d12 + Força, deixa o inimigo Atordoado (perde o próximo turno) e com sangramento pelo nariz.</li>
+                </ul>
+            </div>
+
+            <h3 class="sub-titulo">Informações de Habilidades</h3>
+            <div class="hab-item1"><strong>Estômago de Aço:</strong> <p>O Ogro pode comer literalmente qualquer coisa; ao fazer isso, recupera 2d6 de HP e Energia.</p></div>
+            <div class="hab-item2"><strong>Sentada do Pântano (Ativa):</strong> <p>Gasta 2 de Energia. Um salto seguido de uma sentada no chão causa um mini terremoto em área de 5 metros; todos ao redor recebem 3d8 + Força de dano.</p></div>
+            <div class="hab-item3"><strong>Arroto Atômico (Ativa):</strong> <p>Gasta 6 de Essência. Versão concentrada do bafo: dispara uma bola de fogo e ácido que explode no impacto, causando 5d10 de dano em área e derretendo armaduras.</p></div>
+            <div class="hab-item4"><strong>O VERDADEIRO OGRO! (Ativa):</strong> <p>O Ogro assume sua forma mais aterrorizante, crescendo de tamanho por 3 turnos. Fica imune a Fogo e Veneno, ganha +20 HP temporário e seus ataques corpo a corpo jogam inimigos 5 metros para trás. Ao final, sente fome devastadora e deve comer imediatamente ou perde 10 HP.</p></div>
+        </section>
+
+        <hr class="separator">
+
+        <!-- ===================== 11. PLANTA ===================== -->
+        <section id="planta">
+            <h2 class="raca-nome">11. Planta</h2>
+            <span class="raca-tags">O Atirador Botânico</span>
+
+            <div class="stats-grid">
+                <div class="stat-card"><span class="stat-val">+4</span><span class="stat-label">HP</span></div>
+                <div class="stat-card"><span class="stat-val">+4</span><span class="stat-label">Energia</span></div>
+                <div class="stat-card"><span class="stat-val">+8</span><span class="stat-label">Essência</span></div>
+                <div class="stat-card"><span class="stat-val">+5</span><span class="stat-label">Percepção</span></div>
+                <div class="stat-card"><span class="stat-val">+2</span><span class="stat-label">Reflexo</span></div>
+                <div class="stat-card"><span class="stat-val">+0</span><span class="stat-label">Destreza</span></div>
+                <div class="stat-card"><span class="stat-val">+6</span><span class="stat-label">Força</span></div>
+                <div class="stat-card"><span class="stat-val">+0</span><span class="stat-label">Carisma</span></div>
+                <div class="stat-card"><span class="stat-val">+2</span><span class="stat-label">Furtividade</span></div>
+            </div>
+
+            <h3 class="sub-titulo">Sobre</h3>
+            <div class="hab-item">
+                <p>As Plantas não nascem, elas brotam da vontade da própria floresta. Elas são as guardiãs silenciosas, capazes de converter a luz do sol em poder bruto. Diferente de outras raças, a Planta pode escolher como quer crescer: endurecendo sua casca como um carvalho ou produzindo pólens que curam seus aliados. São calmas, mas quando enraízam para a batalha, são quase impossíveis de remover.</p>
+            </div>
+
+            <h3 class="sub-titulo">Aparência</h3>
+            <div class="hab-item">
+                <p>Sua pele é feita de uma casca flexível ou folhas verdes. Algumas possuem flores no topo da cabeça que mudam de cor conforme o humor. Seus pés são raízes curtas que permitem o movimento, e seus braços podem se esticar levemente como cipós.</p>
+            </div>
+
+            <h3 class="sub-titulo">Habilidades Iniciais</h3>
+            <div class="hab-item"><strong>Disparo de Semente (Ativa):</strong> <p>Gasta 1 de Essência. Dispara um projétil, causando 1d4 + Força.</p></div>
+            <div class="hab-item"><strong>Fotossíntese (Ativa):</strong> <p>Sob a luz do sol, a Planta fica estática e recupera 2 HP por turno.</p></div>
+
+            <h3 class="sub-titulo">Itens</h3>
+            <div class="hab-item">
+                <strong>Saco de Adubo Místico:</strong>
+                <p>Uma vez por batalha, a Planta brilha e triplica o dano ou a cura do próximo ataque.</p>
+            </div>
+            <div class="hab-item">
+                <strong>Vaso de Barro Encantado:</strong>
+                <p>Aumenta o HP máximo em +10 e permite usar "Enraizar" sem gastar o turno de movimento.</p>
+            </div>
+
+            <hr class="separator">
+
+            <h3 class="sub-titulo">⚔️ Progressão de Níveis</h3>
+            <table class="level-table">
+                <thead><tr><th>Nível</th><th>Bônus / Evolução</th></tr></thead>
+                <tbody>
+                    <tr><td class="level-num">Lvl 1</td><td>+2 Essência | +1 HP</td></tr>
+                    <tr><td class="level-num">Lvl 2</td><td>Habilidade: <strong>Enraizar (Ativa)</strong></td></tr>
+                    <tr><td class="level-num">Lvl 3</td><td>+2 Força | +2 Percepção</td></tr>
+                    <tr><td class="level-num">Lvl 4</td><td>Escolha de Espécie: <strong>Atirador, Tanque ou Suporte</strong></td></tr>
+                    <tr><td class="level-num">Lvl 5</td><td>+2 Essência | +2 HP</td></tr>
+                    <tr><td class="level-num">Lvl 6</td><td>Habilidade de Nível 6 (Escolha do Caminho)</td></tr>
+                    <tr><td class="level-num">Lvl 7</td><td>+2 Força | +2 Essência</td></tr>
+                    <tr><td class="level-num">Lvl 8</td><td>Especialização de Nível 8 (Escolha do Caminho)</td></tr>
+                    <tr><td class="level-num">Lvl 9</td><td>+5 HP | +2 Força</td></tr>
+                    <tr><td class="level-num">Lvl 10</td><td>Habilidade de Nível 10 (Escolha do Caminho)</td></tr>
+                    <tr><td class="level-num">Lvl 11</td><td>+4 Essência | +4 Percepção</td></tr>
+                    <tr><td class="level-num">Lvl 12</td><td>Habilidade de Nível 12 (Escolha do Caminho)</td></tr>
+                    <tr><td class="level-num">Lvl 13</td><td>+2 Força | +2 HP</td></tr>
+                    <tr><td class="level-num">Lvl 14</td><td>Habilidade: <strong>Fúria da Natureza (Ativa)</strong></td></tr>
+                    <tr><td class="level-num">Lvl 15</td><td>Habilidade: <strong>DESPERTAR DA FLORESTA!</strong></td></tr>
+                </tbody>
+            </table>
+
+            <h3 class="sub-titulo">🛤️ Caminhos de Evolução</h3>
+
+            <div class="caminho-box">
+                <p class="caminho-titulo">1. Atirador (DPS)</p>
+                <ul>
+                    <li><strong>Nível 4 (Opção A — Cacto) — Abraço de Espinhos:</strong> Gasta 2 de Energia. Devolve 1d6 + Força de dano a quem te bater de perto.</li>
+                    <li><strong>Nível 4 (Opção B — Orquídea) — Semente Elemental:</strong> Disparos podem ser de Fogo (queima +2 de dano) ou Gelo (lentidão: -2 Reflexo e Destreza no alvo).</li>
+                    <li><strong>Nível 6 — Raio Solar:</strong> Gasta 4 de Essência. Canaliza 1 turno e dispara um feixe de calor: 2d12 + Percepção.</li>
+                    <li><strong>Nível 8 — Metralhadora de Espinhos:</strong> Gasta 3 de Essência. Atira 5 espinhos no mesmo turno (1d4 + Força cada).</li>
+                    <li><strong>Nível 10 — Pimenta Explosiva:</strong> Gasta 3 de Energia. Lança um fruto que explode em área, causando 2d10 de fogo.</li>
+                    <li><strong>Nível 12 — Semente Perfurante:</strong> Gasta 3 de Essência. Cria uma semente perfurante que causa o dobro de dano da Semente, além de sangramento, atravessando o alvo e podendo acertar o próximo.</li>
+                </ul>
+            </div>
+
+            <div class="caminho-box">
+                <p class="caminho-titulo">2. Tanque (Defesa)</p>
+                <ul>
+                    <li><strong>Nível 4 (Opção A — Carvalho) — Pele de Casca:</strong> +10 HP permanente e reduz dano recebido em -2.</li>
+                    <li><strong>Nível 4 (Opção B — Vênus) — Mandíbula de Seiva:</strong> Gasta 3 de Energia. Prende o inimigo ao morder e cura 3 HP.</li>
+                    <li><strong>Nível 6 — Muralha de Espinhos:</strong> Gasta 4 de Energia. Cria arbustos que bloqueiam o caminho e dão cobertura.</li>
+                    <li><strong>Nível 8 — Casca de Ferro:</strong> Gasta 3 de Energia. Por 2 turnos, o HP não pode ser reduzido por ataques comuns.</li>
+                    <li><strong>Nível 10 — Raízes de Ferro:</strong> Gasta 4 de Energia. Bate no chão e derruba todos os inimigos próximos.</li>
+                    <li><strong>Nível 12 — Tronco Inabalável:</strong> Imunidade a qualquer efeito que tente mover ou empurrar.</li>
+                </ul>
+            </div>
+
+            <div class="caminho-box">
+                <p class="caminho-titulo">3. Suporte (Cura/Buff)</p>
+                <ul>
+                    <li><strong>Nível 4 (Opção A — Girassol) — Pólen Calmante:</strong> Gasta 1 de Essência. Cura um aliado em 1d8 + Essência.</li>
+                    <li><strong>Nível 4 (Opção B — Vitória-Régia) — Aroma Revigorante:</strong> Aliados ao seu lado recuperam +2 de Energia por turno.</li>
+                    <li><strong>Nível 4 — Raio Solar:</strong> Gasta 2 de Essência. Canaliza 1 turno e dispara um feixe de calor: 1d12 + Percepção de dano em inimigos e cura em aliados.</li>
+                    <li><strong>Nível 6 — Fotossíntese Coletiva:</strong> Gasta 3 de Energia. Libera esporos que curam aliados próximos em 3 HP por 2 turnos.</li>
+                    <li><strong>Nível 8 — Dança da Primavera:</strong> Gasta 3 de Energia. Dá +1 ação de movimento extra para todos os aliados.</li>
+                    <li><strong>Nível 10 — Néctar da Vida:</strong> Gasta 5 de Essência. Cria um fruto que restaura toda a Energia de quem comer.</li>
+                    <li><strong>Nível 12 — Flor da Ressurreição:</strong> Uma vez por campanha, pode trazer de volta um aliado que acabou de cair, com 1 HP.</li>
+                </ul>
+            </div>
+
+            <h3 class="sub-titulo">Informações de Habilidades</h3>
+            <div class="hab-item1"><strong>Enraizar:</strong> <p>Gasta 2 de Energia. Fica estático, ganha +5 de Defesa e recupera +4 de Essência por turno.</p></div>
+            <div class="hab-item2"><strong>Fúria da Natureza:</strong> <p>Gasta 6 de Essência. Chicoteia todos ao redor com vinhas: 3d10 + Força de dano.</p></div>
+            <div class="hab-item3"><strong>DESPERTAR DA FLORESTA!:</strong> <p>Fica gigante por 3 turnos: +20 HP, ataques em área, imunidade a controle e todos os atributos multiplicados por 2. Depois fica "seca" (metade dos atributos) por 2 turnos.</p></div>
+        </section>
+
+        <hr class="separator">
+
+        <!-- ===================== 12. ROBÔ ===================== -->
+        <section id="robo">
+            <h2 class="raca-nome">12. Robô</h2>
+            <span class="raca-tags">O Daora</span>
+
+            <div class="stats-grid">
+                <div class="stat-card"><span class="stat-val">+10</span><span class="stat-label">HP</span></div>
+                <div class="stat-card"><span class="stat-val">+4</span><span class="stat-label">Energia</span></div>
+                <div class="stat-card"><span class="stat-val">+0</span><span class="stat-label">Essência</span></div>
+                <div class="stat-card"><span class="stat-val">+2</span><span class="stat-label">Percepção</span></div>
+                <div class="stat-card"><span class="stat-val">-2</span><span class="stat-label">Reflexo</span></div>
+                <div class="stat-card"><span class="stat-val">-2</span><span class="stat-label">Destreza</span></div>
+                <div class="stat-card"><span class="stat-val">+8</span><span class="stat-label">Força</span></div>
+                <div class="stat-card"><span class="stat-val">-4</span><span class="stat-label">Carisma</span></div>
+                <div class="stat-card"><span class="stat-val">-5</span><span class="stat-label">Furtividade</span></div>
+            </div>
+
+            <h3 class="sub-titulo">Sobre</h3>
+            <div class="hab-item">
+                <p>Diferente das criaturas de carne e osso, os robôs são construções de metal, engrenagens e vapor que ganharam consciência. Alguns dizem que foram criados por um inventor solitário, outros que surgiram da magia que vazou de antigas oficinas. Eles são leais, lógicos e extremamente resistentes, embora sofram com a ferrugem e a falta de jeito social. Sua maior busca é entender o que é ter um "coração".</p>
+            </div>
+
+            <h3 class="sub-titulo">Aparência</h3>
+            <div class="hab-item">
+                <p>Feitos de placas de metal (latão, ferro ou cobre) rebitadas. Possuem articulações que rangem levemente ao se mover e olhos que brilham com uma luz interna suave. Podem ser polidos e brilhantes ou cobertos de ferrugem e musgo.</p>
+            </div>
+
+            <h3 class="sub-titulo">Habilidades Iniciais</h3>
+            <div class="hab-item"><strong>Corpo Blindado (Passiva):</strong> <p>O Robô não precisa respirar, comer ou dormir, e é imune a venenos orgânicos.</p></div>
+            <div class="hab-item"><strong>Sobrecarga de Vapor (Ativa):</strong> <p>Gasta 2 de Energia. O Robô libera pressão interna, ganhando uma ação de movimento extra; seu próximo ataque físico causa +4 de dano.</p></div>
+
+            <h3 class="sub-titulo">Itens</h3>
+            <div class="hab-item">
+                <strong>Óleo de Lubrificação Dourado:</strong>
+                <p>Frasco infinito que mantém as juntas perfeitas. Remove a penalidade de Reflexo e Destreza (ficam +0) e concede +2 Passos.</p>
+            </div>
+            <div class="hab-item">
+                <strong>Núcleo de Energia Instável:</strong>
+                <p>Reator que pulsa no peito. Concede +10 de Energia máxima, mas se o Robô chegar a 0 de HP, ele explode causando 4d10 de dano em todos ao redor (incluindo aliados).</p>
+            </div>
+
+            <hr class="separator">
+
+            <h3 class="sub-titulo">⚔️ Progressão de Níveis</h3>
+            <table class="level-table">
+                <thead><tr><th>Nível</th><th>Bônus / Evolução</th></tr></thead>
+                <tbody>
+                    <tr><td class="level-num">Lvl 1</td><td>+2 Força | +2 HP</td></tr>
+                    <tr><td class="level-num">Lvl 2</td><td>Habilidade: <strong>Jato de Vapor (Ativa)</strong></td></tr>
+                    <tr><td class="level-num">Lvl 3</td><td>+2 Percepção | +2 HP</td></tr>
+                    <tr><td class="level-num">Lvl 4</td><td>Habilidade: <strong>Punho de Mola (Ativa)</strong></td></tr>
+                    <tr><td class="level-num">Lvl 5</td><td>+3 Força | +1 HP</td></tr>
+                    <tr><td class="level-num">Lvl 6</td><td>Habilidade: <strong>Protocolo de Defesa (Ativa)</strong></td></tr>
+                    <tr><td class="level-num">Lvl 7</td><td>+2 HP | +2 Energia</td></tr>
+                    <tr><td class="level-num">Lvl 8</td><td>Habilidade: <strong>Aceleração de Engrenagens</strong> (Óleo) / <strong>Descarga Elétrica</strong> (Núcleo)</td></tr>
+                    <tr><td class="level-num">Lvl 9</td><td>+5 Força | +2 HP</td></tr>
+                    <tr><td class="level-num">Lvl 10</td><td>Habilidade: <strong>Turbina de Velocidade</strong> (Óleo) / <strong>Raio de Pulso</strong> (Núcleo)</td></tr>
+                    <tr><td class="level-num">Lvl 11</td><td>+3 Percepção | +2 HP</td></tr>
+                    <tr><td class="level-num">Lvl 12</td><td>Habilidade: <strong>Ímã Gigante (Ativa)</strong></td></tr>
+                    <tr><td class="level-num">Lvl 13</td><td>+2 Força | +2 HP</td></tr>
+                    <tr><td class="level-num">Lvl 14</td><td>Habilidade: <strong>Auto-Reparo de Emergência (Ativa)</strong></td></tr>
+                    <tr><td class="level-num">Lvl 15</td><td>Habilidade: <strong>GIGANTE DE FERRO!</strong></td></tr>
+                </tbody>
+            </table>
+
+            <h3 class="sub-titulo">Informações de Habilidades</h3>
+            <div class="hab-item1"><strong>Jato de Vapor (Ativa):</strong> <p>Gasta 3 de Energia. Dispara uma nuvem de vapor fervente em cone à frente: 1d10 + Força, e deixa os inimigos cegos por 1 turno devido à fumaça.</p></div>
+            <div class="hab-item2"><strong>Punho de Mola (Ativa):</strong> <p>Gasta 3 de Energia. O braço dispara e volta por uma mola; ataque à distância (até 5 metros) causando 2d8 + Força e puxando o inimigo 2 metros para perto.</p></div>
+            <div class="hab-item3"><strong>Protocolo de Defesa (Ativa):</strong> <p>Gasta 4 de Energia. O Robô entra em modo estático, tornando-se cobertura pesada. Ganha +10 de Defesa e pode proteger um aliado atrás de si, recebendo o dano no lugar dele.</p></div>
+            <div class="hab-item4"><strong>Aceleração de Engrenagens (Nível 8 / Óleo):</strong> <p>Gasta 2 de Energia. O Robô se move tão suavemente que pode realizar dois ataques básicos no mesmo turno.</p></div>
+            <div class="hab-item5"><strong>Descarga Elétrica (Nível 8 / Núcleo):</strong> <p>Gasta 4 de Energia. Libera eletricidade do núcleo, causando 2d12 de dano e deixando o inimigo Paralisado (não pode agir) por 1 turno.</p></div>
+            <div class="hab-item6"><strong>Turbina de Velocidade (Nível 10 / Óleo):</strong> <p>Gasta 3 de Energia. O Robô desliza pelo campo, podendo atravessar inimigos sem levar ataques, causando 1d6 de dano de atropelamento em quem passar.</p></div>
+            <div class="hab-item7"><strong>Raio de Pulso (Nível 10 / Núcleo):</strong> <p>Gasta 5 de Energia. Dispara um raio de energia pura do peito: 3d10 de dano. Se matar o inimigo, o Robô recupera 2 de Energia.</p></div>
+            <div class="hab-item8"><strong>Ímã Gigante (Ativa):</strong> <p>Gasta 4 de Energia. Ativa um magnetismo poderoso: todos os inimigos usando metal ou armas de metal são puxados para o Robô e ficam grudados por 2 turnos.</p></div>
+            <div class="hab-item9"><strong>Auto-Reparo de Emergência (Ativa):</strong> <p>Gasta 6 de Energia. O Robô usa solda interna e peças reserva, recuperando 2d20 de HP imediatamente, mas fica imóvel por 1 turno enquanto conserta.</p></div>
+            <div class="hab-item10"><strong>GIGANTE DE FERRO!:</strong> <p>O Robô ativa todo o seu potencial. Por 3 turnos, cresce de tamanho, dobra seu dano de Força e sua pele reflete 50% de todo dano recebido de volta ao atacante. No fim, entra em "Pane no Sistema" e não pode agir por 2 turnos.</p></div>
+        </section>
+
+    </div>
+</main>
+
+<script src="assets/script.js"></script>
+</body>
+</html>

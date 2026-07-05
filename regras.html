@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RPG — Regras &amp; Combate</title>
+    <link rel="stylesheet" href="assets/style.css">
+</head>
+<body>
+
+<aside class="sidebar">
+    <div class="sidebar-brand">Ilha Encantada</div>
+    <div class="sidebar-title">Regras</div>
+
+    <ul class="site-nav">
+        <li><a href="index.html">🏠 Início</a></li>
+        <li><a href="ficha.html">📜 Ficha de Personagem</a></li>
+        <li><a href="racas.html">🐾 Raças</a></li>
+        <li><a href="classes.html">🛠️ Classes (Trabalhos)</a></li>
+        <li><a href="regras.html" class="ativo">⚔️ Regras & Combate</a></li>
+        <li><a href="itens.html">🗡️ Itens & Preços</a></li>
+        <li><a href="progressao.html">✦ Progressão & Níveis</a></li>
+        <li><a href="criar-acao.html">✨ Criar Ação</a></li>
+    </ul>
+    <hr class="sidebar-divisor">
+
+    <ul class="lista-atalhos">
+        <li><a href="#inicio" class="btn-atalho">📖 Capa</a></li>
+        <li><a href="#atributos-vitais" class="btn-atalho">Atributos Vitais</a></li>
+        <li><a href="#atributos-personagem" class="btn-atalho">Atributos de Personagem</a></li>
+        <li><a href="#economia" class="btn-atalho">Sistema de Economia</a></li>
+        <li><a href="#combate" class="btn-atalho">Funcionamento de Combate</a></li>
+        <li><a href="#ataques-padrao" class="btn-atalho">Ataques Padrões</a></li>
+        <li><a href="#sangramento" class="btn-atalho">Estados de Sangramento</a></li>
+        <li><a href="#tipos-ataque" class="btn-atalho">Tipos de Ataque</a></li>
+    </ul>
+
+    <div class="sidebar-footer">
+        <a href="#inicio" class="btn-atalho" style="background: var(--blood); color: white;">Subir ao Topo</a>
+    </div>
+</aside>
+
+<main class="main-content">
+    <div class="grimorio" id="inicio">
+
+        <header class="capa">
+            <h1>Regras &amp; Combate</h1>
+            <p class="subtitulo-capa">Como o Mundo Encantado Funciona</p>
+        </header>
+
+        <!-- ===================== ATRIBUTOS VITAIS ===================== -->
+        <section id="atributos-vitais">
+            <h2 class="raca-nome" style="font-size:1.8rem;">Atributos Vitais</h2>
+            <span class="raca-tags">Barras de Status</span>
+
+            <div class="hab-item"><strong>❤ HP:</strong> <p>Vida do personagem.</p></div>
+            <div class="hab-item"><strong>⚡ Energia:</strong> <p>Usada para os Minigames de Trabalho e para a sequência de corrida. Se a energia acabar, o personagem fica exausto.</p></div>
+            <div class="hab-item"><strong>🍴 Saciamento (Fome):</strong> <p>Se estiver com fome, o personagem perde bônus de ataque ou defesa.</p></div>
+            <div class="hab-item"><strong>✦ Essência:</strong> <p>Utilizada para itens mágicos, recuperando +2 pontos a cada turno.</p></div>
+        </section>
+
+        <hr class="separator">
+
+        <!-- ===================== ATRIBUTOS DE PERSONAGEM ===================== -->
+        <section id="atributos-personagem">
+            <h2 class="raca-nome" style="font-size:1.8rem;">Atributos de Personagem</h2>
+            <span class="raca-tags">Status Base</span>
+
+            <div class="callout">
+                Os atributos adicionam bônus a movimentos, ataques e testes, sendo sempre <strong>+[Atributo / 5]</strong> (arredondado para baixo).
+            </div>
+
+            <div class="hab-item"><strong>Observação (Percepção):</strong> <p>Serve para perceber ou notar algo.</p></div>
+            <div class="hab-item"><strong>Reflexo:</strong> <p>Para desviar de ataques ou utilizar no Contra-Ataque.</p></div>
+            <div class="hab-item"><strong>Destreza (Agilidade):</strong> <p>Utilizada para saltos, movimentação, trabalho e outros.</p></div>
+            <div class="hab-item"><strong>Força:</strong> <p>Para o trabalho braçal e combate físico.</p></div>
+            <div class="hab-item"><strong>Carisma (Lábia):</strong> <p>Para interrogar, enganar e negociar com outros personagens.</p></div>
+            <div class="hab-item"><strong>Furtividade:</strong> <p>Para momentos de se esconder.</p></div>
+        </section>
+
+        <hr class="separator">
+
+        <!-- ===================== ECONOMIA ===================== -->
+        <section id="economia">
+            <h2 class="raca-nome" style="font-size:1.8rem;">Sistema de Economia</h2>
+            <span class="raca-tags">Moedas &amp; Reputação</span>
+
+            <div class="hab-item"><strong>Moedas de Prata/Ouro:</strong> <p>Uma prata é comum para comprar um alimento simples. 10 pratas = 1 ouro.</p></div>
+            <div class="hab-item"><strong>Reputação/Honra:</strong> <p>Um medidor de moralidade que pode influenciar como a vila trata o personagem.</p></div>
+        </section>
+
+        <hr class="separator">
+
+        <!-- ===================== COMBATE ===================== -->
+        <section id="combate">
+            <h2 class="raca-nome" style="font-size:1.8rem;">Funcionamento de Combate</h2>
+            <span class="raca-tags">Turnos &amp; Ações</span>
+
+            <div class="callout">
+                Em cada turno de combate, o jogador pode executar duas escolhas: Movimento ou Ataque, podendo fazer Movimento + Ataque em qualquer ordem, ou dois Movimentos.
+            </div>
+
+            <div class="hab-item">
+                <strong>Movimento:</strong>
+                <p>Utilizado para chegar a um local desejado, usando Destreza somada aos Passos que o jogador tem, sendo Passos + Destreza.</p>
+            </div>
+            <div class="hab-item">
+                <strong>Ataque:</strong>
+                <p>O jogador usa ataques pré-definidos ou obtidos durante o jogo para acertar personagens ou objetos.</p>
+                <p>Para acertar personagens, rola-se 1d20 caso o alvo esteja lúcido; o alvo escolhe reagir com <strong>Desvio</strong> ou <strong>Contragolpe</strong>. Para objetos, basta 1d20 maior que 1 para acertar.</p>
+            </div>
+            <div class="hab-item">
+                <strong>Desvio:</strong>
+                <p>O usuário utiliza Reflexo para desviar do ataque; precisa ser maior que o acerto do inimigo.</p>
+            </div>
+            <div class="hab-item">
+                <strong>Contragolpe:</strong>
+                <p>O usuário é acertado e leva o dano por inteiro, mas pode executar um ataque obrigatório contra quem o acertou, usando Reflexo em vez de Força.</p>
+            </div>
+        </section>
+
+        <hr class="separator">
+
+        <!-- ===================== ATAQUES PADRÕES ===================== -->
+        <section id="ataques-padrao">
+            <h2 class="raca-nome" style="font-size:1.8rem;">Ataques Padrões</h2>
+            <span class="raca-tags">Armas Improvisadas Iniciais</span>
+
+            <div class="attack-card">
+                <h4>Soco (Corpo a Corpo)</h4>
+                <p><strong>Direto:</strong> Golpe rápido com o punho. <span class="dado-tag">1d4</span></p>
+                <p><strong>Gancho:</strong> Golpe de baixo para cima. <span class="dado-tag">1d4 + Força</span></p>
+            </div>
+
+            <div class="attack-card">
+                <h4>Pedra (Arremesso)</h4>
+                <p><strong>Pedrada:</strong> Atira uma pedra. <span class="dado-tag">1d2 + Força</span></p>
+            </div>
+
+            <div class="attack-card">
+                <h4>Faca de Cozinha</h4>
+                <p><strong>Corte:</strong> Corte simples. <span class="dado-tag">1d4</span></p>
+                <p><strong>Serrar:</strong> Esfrega a lâmina. <span class="dado-tag">1d4 + Sangramento Leve (1 de dano por 2 turnos)</span></p>
+            </div>
+
+            <div class="attack-card">
+                <h4>Tronco Pequeno (Galho)</h4>
+                <p><strong>Paulada:</strong> Golpe seco. <span class="dado-tag">1d6</span></p>
+                <p><strong>Estocada:</strong> Bate com a ponta. <span class="dado-tag">1d4 + empurrão (1 passo)</span></p>
+            </div>
+
+            <div class="attack-card">
+                <h4>Bastão de Madeira</h4>
+                <p><strong>Golpe Curto:</strong> Bate com a ponta. <span class="dado-tag">1d6</span></p>
+                <p><strong>Defesa:</strong> Aumenta o Reflexo em +2 para desvios neste turno.</p>
+            </div>
+        </section>
+
+        <hr class="separator">
+
+        <!-- ===================== SANGRAMENTO ===================== -->
+        <section id="sangramento">
+            <h2 class="raca-nome" style="font-size:1.8rem;">Estados de Sangramento</h2>
+            <span class="raca-tags">Dano Contínuo</span>
+
+            <div class="callout">
+                O sangramento é um dano contínuo que ignora defesas físicas. Ocorre no início do turno da vítima.
+            </div>
+
+            <div class="hab-item">
+                <strong>Sangramento Leve</strong>
+                <p><strong>Efeito:</strong> Perde 1 HP por turno durante 3 turnos.</p>
+                <p><strong>Causa:</strong> Armas pequenas (facas, flechas) ou cortes superficiais.</p>
+                <p><strong>Cura:</strong> Um curativo simples ou o fim da duração.</p>
+            </div>
+
+            <div class="hab-item">
+                <strong>Sangramento Normal</strong>
+                <p><strong>Efeito:</strong> Perde 3 HP por turno durante 3 turnos. O personagem gasta +1 de Energia para qualquer ação física devido à dor.</p>
+                <p><strong>Causa:</strong> Espadas, machados e golpes críticos.</p>
+                <p><strong>Cura:</strong> Habilidade de Médico ou item de Primeiros Socorros.</p>
+            </div>
+
+            <div class="hab-item">
+                <strong>Sangramento Severo</strong>
+                <p><strong>Efeito:</strong> Perde 5 HP por turno até ser tratado. Não recupera Energia enquanto sangrando assim.</p>
+                <p><strong>Causa:</strong> Armas pesadas, ataques de animais grandes (Lobo) ou ferimentos de armas de fogo.</p>
+                <p><strong>Cura:</strong> Apenas intervenção de um Médico.</p>
+            </div>
+        </section>
+
+        <hr class="separator">
+
+        <!-- ===================== TIPOS DE ATAQUE ===================== -->
+        <section id="tipos-ataque">
+            <h2 class="raca-nome" style="font-size:1.8rem;">Tipos de Ataque</h2>
+            <span class="raca-tags">Custo &amp; Execução</span>
+
+            <div class="callout">
+                Os personagens possuem 2 ações por turno. O tipo de ataque define como essas ações são gastas.
+            </div>
+
+            <div class="attack-card">
+                <h4>Ataque Normal</h4>
+                <p><strong>Custo:</strong> 1 ação e 0 de Energia.</p>
+                <p><strong>Mecânica:</strong> Ataque padrão — permite atacar e ainda se mover, ou atacar duas vezes no mesmo turno.</p>
+                <p><strong>Dano:</strong> Dado base da arma.</p>
+            </div>
+
+            <div class="attack-card">
+                <h4>Ataque Pesado</h4>
+                <p><strong>Custo:</strong> 1 ação e 2 de Energia.</p>
+                <p><strong>Mecânica:</strong> O personagem coloca todo o peso no golpe; se acertar, adiciona um dado extra e não é bloqueável.</p>
+                <p><strong>Dano:</strong> Dado base da arma + 2.</p>
+            </div>
+        </section>
+
+    </div>
+</main>
+
+<script src="assets/script.js"></script>
+</body>
+</html>
